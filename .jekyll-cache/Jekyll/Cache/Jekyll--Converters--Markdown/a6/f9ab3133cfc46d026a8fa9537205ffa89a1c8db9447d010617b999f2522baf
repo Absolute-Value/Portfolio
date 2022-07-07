@@ -1,0 +1,38 @@
+I"�<h2 id="1-どんなもの">1. どんなもの?</h2>
+<!-- 概要・貢献等 100-200字程度 -->
+<ul>
+  <li>敵対的入力を検出、分類、警告するシステム（DeClaW）</li>
+  <li>異常（攻撃）検知
+<!--more--></li>
+</ul>
+
+<h2 id="2-先行研究と比べてどこがすごい">2. 先行研究と比べてどこがすごい？</h2>
+<!-- related worksとの差分 -->
+<ul>
+  <li>先行研究では攻撃の検出のみに焦点を当てており、分類は未解決の問題</li>
+  <li>潜在特徴が16Kから176に削減</li>
+</ul>
+
+<h2 id="3-技術や手法のキモはどこ">3. 技術や手法の”キモ”はどこ？</h2>
+<!-- キモを箇条書きでまとめる -->
+
+<h3 id="学習">学習</h3>
+<!-- キモの中の学習に関する内容 -->
+
+<ul>
+  <li>事前学習済み分類機の出力を使って特徴ベクトルを抽出<br />
+<img src="/assets/images/posts/DeClaW/pretrained.png" alt="" /></li>
+  <li>2つ目のネットワークで分類を学習<br />
+<img src="/assets/images/posts/DeClaW/second.png" alt="" /></li>
+</ul>
+
+<h2 id="4-どうやって有効だと検証した">4. どうやって有効だと検証した？</h2>
+<!-- 実験の精度，結果画像など -->
+
+<ul>
+  <li>検出精度 93~96%<br />
+<img src="/assets/images/posts/DeClaW/Attack.png" alt="" /></li>
+  <li>分類精度 90~99%<br />
+<img src="/assets/images/posts/DeClaW/class.png" alt="" /></li>
+</ul>
+:ET

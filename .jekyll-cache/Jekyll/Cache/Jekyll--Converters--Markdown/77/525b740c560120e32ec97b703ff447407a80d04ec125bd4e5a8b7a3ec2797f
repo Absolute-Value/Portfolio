@@ -1,0 +1,101 @@
+I"N<h2 id="1-どんなもの">1. どんなもの?</h2>
+<!-- 概要・貢献等 100-200字程度 -->
+<p>オートエンコーダで再構成して異常と判断された領域をマスキングして再構成、ということを繰り返すことで再構成品質を向上させた
+<!--more--></p>
+
+<h2 id="2-先行研究と比べてどこがすごい">2. 先行研究と比べてどこがすごい？</h2>
+<!-- related worksとの差分 -->
+<ul>
+  <li>通常のオートエンコーダでは異常な箇所を削除する動作を学習していないため、画像全体に影響を与えてしまう</li>
+  <li>削除を学習、さらに反復で克服</li>
+</ul>
+
+<h2 id="3-技術や手法のキモはどこ">3. 技術や手法の”キモ”はどこ？</h2>
+<!-- キモを箇条書きでまとめる -->
+<p><img src="/assets/images/posts/I3AD/method1.png" alt="" /></p>
+
+<h3 id="変数定義">変数定義</h3>
+<!--
+学習・推論で使う変数をまとめる
+* $x$: 入力画像
+* $y$: 教師信号
+-->
+<ul>
+  <li>$G()$: 生成器(オートエンコーダ)</li>
+  <li>$D()$: 識別器(スペクトル正則化とAttentionの入った条件付きGAN?)</li>
+  <li>$L_G()$: 生成器のLoss</li>
+  <li>$L_D()$: 識別器のLoss</li>
+  <li>$u$: 異常度の閾値</li>
+</ul>
+
+<h3 id="学習">学習</h3>
+<!-- キモの中の学習に関する内容 -->
+<ul>
+  <li>生成器(オートエンコーダ)は自由形式のマスクを付与した画像を復元し、識別器をだますように学習<br />
+\(L_G = -E_{x \sim P_{data}(x),M \sim P(M)}\big[D^{sn}\big(G(\hat{x} = M \otimes x, M)\big)\big]\)</li>
+  <li>識別器は元画像とマスク付与して復元した画像を見分けるように学習<br />
+\(L_D = E_{x \sim P_{data}(x)}\big[ReLU\big(1-D^{sn}(x)\big)\big] + E_{x \sim P_{data},M \sim P(M)}\big[ReLU \big(1+D^{sn} \big(G(\hat{x} = M \otimes x, M)\big)\big)\big]\)</li>
+</ul>
+
+<h3 id="推論異常度の算出">推論（異常度の算出）</h3>
+<!-- キモの中の推論に関する内容 -->
+<ul>
+  <li>概要<br />
+<img src="/assets/images/posts/I3AD/method2.png" alt="" /></li>
+  <li>最初は市松模様の行列マスクを付与して生成器で再構成<br />
+<img src="/assets/images/posts/I3AD/moyo.png" alt="" /></li>
+  <li>再構成画像と元画像のSSIMをとり、SSIMが閾値$u$以上のものをマスクにする<br />
+\(M_i = 
+\begin{cases} 
+  1 &amp; \textrm{if} &amp; a_i(x) \geq u \newline
+  0 &amp; \textrm{otherwise} 
+\end{cases}\)<br />
+\(a\_i = SSIM(x\_0,\tilde{x}\_i)\)<br />
+\(\tilde{x}\_i = G(\tilde{x}\_{i-1}, M\_{i-1})\)</li>
+  <li>そのマスクを元画像に付与したものを生成器で再構成</li>
+  <li>そしてSSIMでマスクをつくる</li>
+  <li>この動作を反復する</li>
+  <li>マスク領域を前回と比較し小さければ早期終了</li>
+  <li>N回繰り返したマスク$M_N$を異常検知に使用</li>
+</ul>
+
+<h2 id="4-どうやって有効だと検証した">4. どうやって有効だと検証した？</h2>
+<!-- 実験の精度，結果画像など -->
+<ul>
+  <li>MVTecデータセット
+    <ul>
+      <li>オートエンコーダとの比較<br />
+  <img src="/assets/images/posts/I3AD/AEauc.png" alt="" /></li>
+      <li>AnoGANとの比較<br />
+  <img src="/assets/images/posts/I3AD/GANauc.png" alt="" /></li>
+      <li>異常箇所検知
+        <ul>
+          <li>赤線が正解、緑が検知箇所<br />
+  <img src="/assets/images/posts/I3AD/local.png" alt="" /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="5-議論はあるか">5. 議論はあるか？</h2>
+<!-- 自分なりの考察や疑問-->
+<ul>
+  <li>条件付きGANとしてマスクを条件にしているが、マスク部分に注目しないようにしているのか</li>
+</ul>
+
+<h2 id="6-関連文献">6. 関連文献</h2>
+<!--
+1. D. P. Kingma and J. Ba: “Adam: A method for stochastic optimization,”arXiv preprint arXiv:1412.6980,(2014).
+2. P. Isola,J. Y. Zhu,T. Zhou,and A. A. Efros: “Image-to-image translation with conditional adversarial networks,” in Proceedings of the IEEE conference on computer vision and pattern recognition, (2017), 1125.
+-->
+<ol>
+  <li>Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei A Efros. Image-to-image translation with conditional adversarial networks. In Proceedings ofthe IEEE conference on computer vision and pattern recognition, pp. 1125–1134, 2017.
+    <ul>
+      <li>pix2pix</li>
+    </ul>
+  </li>
+  <li>Jiahui Yu, Zhe Lin, Jimei Yang, Xiaohui Shen, Xin Lu, and Thomas S Huang. Generative image inpainting with contextual attention. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 5505–5514, 2018.</li>
+  <li>Jiahui Yu, Zhe Lin, Jimei Yang, Xiaohui Shen, Xin Lu, and Thomas S Huang. Free-form image inpainting with gated convolution. In Proceedings ofthe IEEE International Conference on Computer Vision, pp. 4471–4480, 2019</li>
+</ol>
+:ET

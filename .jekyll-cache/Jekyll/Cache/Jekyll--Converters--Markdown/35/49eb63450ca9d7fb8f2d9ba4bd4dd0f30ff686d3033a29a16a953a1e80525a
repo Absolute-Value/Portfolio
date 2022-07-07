@@ -1,0 +1,67 @@
+I"<h2 id="概要">概要</h2>
+
+<ul>
+  <li>メタ学習を活用した1枚の顔写真からのNeRF生成
+    <ul>
+      <li>顔だけでなく、頭頂部、髪、胴体、眼鏡などのアクセサリを含む</li>
+    </ul>
+  </li>
+  <li>世界座標からの剛体変換を用いて、顔空間においてNeRFを事前学習させるアルゴリズムを提案
+    <ul>
+      <li>学習データ間の形状のばらつき補正により、未見の被験者に対するモデルの汎化が大幅に改善</li>
+    </ul>
+  </li>
+  <li>照明ステージでの制御されたキャプチャからなる多視点ポートレートデータセットを提供
+<!--more--></li>
+</ul>
+
+<h2 id="アイデア">アイデア</h2>
+<p><img src="/assets/images/posts/PortraitNeRF/2.png" alt="" /></p>
+
+<h3 id="事前学習">事前学習</h3>
+<p><img src="/assets/images/posts/PortraitNeRF/3.png" alt="" /></p>
+<ul>
+  <li>学習データは正面のサポートセット$D_s$と他の角度$D_q$に分かれている</li>
+  <li>被験者$m$ごとに
+    <ul>
+      <li>まず、$D_s$を用いて$\theta_{p,m}$を更新して$\theta^*_m$を取得 (1)</li>
+      <li>続いて、$D_q$を用いて， $ {\theta}^{*}<em>{m} $ を更新するときの勾配情報 $ \nabla</em>{\theta} L_{D_{q}}(f_{\theta_{m}}) $ を取得 (2)
+        <ul>
+          <li>正面以外の勾配更新情報</li>
+        </ul>
+      </li>
+      <li>勾配情報$ \nabla_\theta L_{D_q}(f_{\theta_m}) $を$ \theta_{p,m} $に適用することで新たなパラメータ$\theta_{p,m+1}$を得る (3)
+        <ul>
+          <li>正面情報はテスト時に入力されるため直接勾配更新はしない</li>
+        </ul>
+      </li>
+      <li>すべての被験者$m$に繰り返して学習終了、パラメータ$\theta^*_p$を得る</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="剛体変換">剛体変換</h3>
+<ul>
+  <li>顔のメッシュを用いて、World座標から標準顔座標への剛体変換を学習する
+    <ul>
+      <li>顔のメッシュ(b)を平均顔(d)の頂点の対応を用いている<br />
+  <img src="/assets/images/posts/PortraitNeRF/4.png" alt="" /></li>
+    </ul>
+  </li>
+  <li>World座標そのままの(b)に比べて標準顔座標を用いた(c)では顎と目がより自然になっている<br />
+<img src="/assets/images/posts/PortraitNeRF/5.png" alt="" /></li>
+</ul>
+
+<h3 id="テスト">テスト</h3>
+<ul>
+  <li>1つの画像で事前学習したパラメータ$\theta^*_p$をファインチューニングし、色と密度を求めてボリュームレンダリングすることで画像を生成</li>
+</ul>
+
+<h2 id="結果">結果</h2>
+
+<ul>
+  <li>最新手法との比較<br />
+<img src="/assets/images/posts/PortraitNeRF/6.png" alt="" /><br />
+<img src="/assets/images/posts/PortraitNeRF/7.png" alt="" /></li>
+</ul>
+:ET

@@ -1,0 +1,56 @@
+I"
+<p>Jekyll関連で役に立ちそうな個人的メモです</p>
+
+<!--more-->
+
+<p><a href="Jekyll-Install.html">インストール関連</a></p>
+
+<h1 id="jekyllの新規作成">Jekyllの新規作成</h1>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>jekyll new <span class="o">{</span>name<span class="o">}</span>
+</code></pre></div></div>
+<p>{name}は任意のプロジェクト名</p>
+
+<h1 id="jekyllの起動">Jekyllの起動</h1>
+
+<p>ローカルでサーバーを立ち上げる時</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>jekyll serve
+</code></pre></div></div>
+
+<p>サイトをプロダクションとして生成する時</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>jekyll build
+</code></pre></div></div>
+
+<p>起動後のURL：<a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a></p>
+
+<h1 id="githubへの投稿方法">Githubへの投稿方法</h1>
+
+<p>_siteディレクトリへ移動する</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">cd </span>_site
+</code></pre></div></div>
+
+<p>いつものgit操作</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>git add <span class="nb">.</span>
+<span class="gp">$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Comment"</span>
+<span class="gp">$</span><span class="w"> </span>git push
+</code></pre></div></div>
+
+<h1 id="markdown記法">Markdown記法</h1>
+<h2 id="インラインコード">インラインコード</h2>
+<p>'で囲む (Shift + @)</p>
+<h2 id="コード">コード</h2>
+<p>'''で囲む</p>
+
+<h1 id="お役立ちリンク">お役立ちリンク</h1>
+<ul>
+  <li><a href="http://jekyllrb-ja.github.io/tutorials/convert-existing-site-to-jekyll/">HTMLサイトをJekyllに変換</a></li>
+  <li><a href="https://clipkit.co/docs/ja/admin/liquid/">テンプレート言語Liquid</a>
+    <ul>
+      <li><a href="https://blackpigtail.com/web-design/2680">Liquidで四則演算</a></li>
+    </ul>
+  </li>
+  <li><a href="https://johobase.com/font-awesome-icon-font-list-free/">アイコン一覧</a></li>
+</ul>
+:ET

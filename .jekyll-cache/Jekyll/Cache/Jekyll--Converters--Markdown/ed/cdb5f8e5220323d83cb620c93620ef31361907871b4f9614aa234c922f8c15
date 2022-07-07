@@ -1,0 +1,42 @@
+I"�<h2 id="概要">概要</h2>
+
+<ul>
+  <li>MRIボリュームは3Dだが，教師なし異常検知の手法はほとんどが2Dである</li>
+  <li>そこで，3D VAEを提案し，2D VAEに比べ性能が向上した
+<!--more--></li>
+</ul>
+
+<h2 id="新規性差分">新規性・差分</h2>
+
+<ul>
+  <li>VAEで3Dデータのまま扱うこと</li>
+</ul>
+
+<h2 id="手法">手法</h2>
+
+<ul>
+  <li>
+    <p>構造は基本のVAEと変わらない<br />
+<img src="/assets/images/posts/3D-VAE/2.png" alt="" /></p>
+  </li>
+  <li>
+    <p>3つの前処理を試した</p>
+    <ol>
+      <li>1~25%の領域を2Dではパッチごとに，3Dではキューブごとにマスクアウトする</li>
+      <li>パッチやキューブを最大10個に分割して配置</li>
+      <li>対称性を考慮し脳の右側または左側を削除する</li>
+    </ol>
+  </li>
+</ul>
+
+<p><img src="/assets/images/posts/3D-VAE/3.png" alt="" /></p>
+
+<h2 id="結果">結果</h2>
+
+<ul>
+  <li>「BraTS」と「ATLAS」において3D VAEが2D VAEを上回る<br />
+<img src="/assets/images/posts/3D-VAE/4.png" alt="" /><br />
+<img src="/assets/images/posts/3D-VAE/5.png" alt="" /></li>
+  <li>マスクはゼロ埋めよりノイズ埋めの方が高性能</li>
+</ul>
+:ET

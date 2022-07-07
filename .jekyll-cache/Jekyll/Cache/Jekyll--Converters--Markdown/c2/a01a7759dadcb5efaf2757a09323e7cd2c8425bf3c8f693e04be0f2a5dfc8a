@@ -1,0 +1,56 @@
+I"|<h2 id="概要">概要</h2>
+
+<ul>
+  <li>3Dデータをf-AnoGANで扱うために拡張</li>
+  <li>外傷性脳損傷患者のCT画像の実験においてAUROC 約75%で検出できる
+<!--more--></li>
+</ul>
+
+<h2 id="新規性差分">新規性・差分</h2>
+
+<ul>
+  <li>GANで3Dデータのまま扱うこと</li>
+</ul>
+
+<h2 id="手法">手法</h2>
+
+<h3 id="ganの学習">GANの学習</h3>
+<p><img src="/assets/images/posts/3D-GAN/2.png" alt="" /></p>
+
+<ul>
+  <li>通常のGANとは異なる損失関数を使用
+    <ul>
+      <li>$ \begin{align<em>} L_D = \mathbb{E}_{\tilde{x}\sim\mathbb{P}_g}[D(\tilde{x})] - \mathbb{E}_{\tilde{x}\sim\mathbb{P}_r}[D(x)] + \mathbb{E}_{\tilde{x}\sim\mathbb{P}_{\tilde{x}}}[(| \nabla_{\tilde{x}} D(\tilde{x})|_2-1)^2] \end{align</em>} $</li>
+      <li>$ L_G=-\mathbb{E}_{\tilde{x}\sim\mathbb{P}_g}[D(\tilde{x})] $</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="encoderの学習">Encoderの学習</h3>
+<p><img src="/assets/images/posts/3D-GAN/3.png" alt="" /></p>
+
+<ul>
+  <li>二乗誤差と識別器の特徴量誤差
+    <ul>
+      <li>$L_E = L_{img} + \kappa \cdot L_{feat}$
+        <ul>
+          <li>$L_{img} = \frac{1}{n} | x-\tilde{x}|^2$</li>
+          <li>$L_{feat} = \frac{1}{m} | f(x) - f(\tilde{x})|$</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="結果">結果</h2>
+
+<ul>
+  <li>
+    <p>2Dに比べAUROCが4%向上<br />
+<img src="/assets/images/posts/3D-GAN/4.png" alt="" /></p>
+  </li>
+  <li>病変の種類によらず性能はほぼ同じ</li>
+  <li>ラベル付けされていない異常を見つけることができている<br />
+<img src="/assets/images/posts/3D-GAN/5.png" alt="" /></li>
+</ul>
+:ET

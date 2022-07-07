@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/assets/css/posts.css' | relative_url }}">
+  </head>
+  <body>
+    {{ content }}
+    <div class="myposts">
+      {% for post in site.posts %}
+        {% if post.layout != 'post'%}
+        <div class="post">
+          <a href="{{ post.url }}">
+            <img class="post_img" src="{{post.hero | relative_url}}">
+            <div class="post_detail">
+              <p>
+                <b>{{ post.title }}</b>
+              </p>
+              <p>{{ post.excerpt | remove:'概要' }}</p>
+              <p>
+                <span class="fa fa-calendar"></span> {{ post.date | date: "%b %-d, %Y" }}
+                <span class="fa fa-folder"></span> {{ post.category }}
+              </p>
+            </div>
+          </a>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </body>
+</html>

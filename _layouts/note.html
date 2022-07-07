@@ -1,0 +1,21 @@
+---
+layout: header
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <img src="{{page.hero | relative_url}}" class="hero">
+    <h1>{{page.title}}</h1>
+    <p><span class="fa fa-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}</p>
+    <p><span class="fa fa-flag"></span> {% for tag in page.tags %}{{tag}}, {% endfor %}</p>
+    {{content}}
+    <div class="btn-wrapper">
+      <a href="{{'notes' | relative_url}}" class="btn back_btn">一覧へ戻る</a>
+    </div>
+  </body>
+</html>

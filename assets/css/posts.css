@@ -1,0 +1,41 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa {
+  margin-left: 10px;
+}
+
+.myposts {
+  margin: 6%;
+}
+
+.post {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.post b {
+  font-size: xx-large;
+}
+
+.post_detail {
+  margin-left: 10px;
+  height: max-content;
+  float: right;
+}
+
+.post_detail:hover {
+  color: darkblue;
+}
+
+.post_img {
+  height: 210px;
+  width: 280px;
+  float: left;
+}
