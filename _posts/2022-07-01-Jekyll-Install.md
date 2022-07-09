@@ -46,9 +46,17 @@ $ ruby -v
 Rubyのバージョンが2など最新でない場合は端末を再起動
 
 ## jekyllのインストール
-```
+```console
 $ gem install jekyll
 ```
+
+# エラー対処
+コマンドライン起動時に
+'''chruby: unknown Ruby: ruby-3.1.1'''
+と表示される場合  
+  
+./.zshrc内に誤ったバージョンを追加してしまっているため，[vi](../02/vi.html)などで文を削除すると解決する
+
 ## Jekyll使い方はコチラ
 [Jekyll ホームページ 個人的メモ](Jekyll.html)
 
