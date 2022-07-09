@@ -1,7 +1,7 @@
 #!/bin/sh
 
 git add .
-if [ $# -ne 0 ]; then
+if [ $# -eq 0 ]; then
     git commit -m "Update"
 else
     git commit -m "$1"
