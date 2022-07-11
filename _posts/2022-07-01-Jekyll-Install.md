@@ -53,10 +53,10 @@ $ gem install jekyll
 # エラー対処
 コマンドライン起動時に`chruby: unknown Ruby: ruby-3.1.1`と表示される場合  
   
-./.zshrc内に誤ったバージョンを追加してしまっているため，[vi](../02/vi.html)などで文を削除すると解決する
+./.zshrc内に誤ったバージョンを追加してしまっているため，[vi]({% post_url 2022-07-02-vi %})などで文を削除すると解決する
 
 ## Jekyll使い方はコチラ
-[Jekyll ホームページ 個人的メモ](Jekyll.html)
+[Jekyll ホームページ 個人的メモ]({% post_url 2022-07-01-Jekyll %})
 
 # その他設定
 [Markdownで数式を使用する方法](https://qiita.com/memakura/items/e4d2de379f98ad7be498)
