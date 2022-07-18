@@ -25,8 +25,10 @@ layout: home
 - Python
   - 最も使用している言語です．機械学習を行なう際に利用しています．
 - Java
-  - シューティングゲームやカレンダーアプリを作成しました．
+  - シューティングゲームを作成しました．
   - <img src="/assets/images/FiShooting.png" height="300"/>
+  - Javaを用いてAndroidアプリも作成しました
+  - ![TODOリスト付きカレンダー](https://github.com/Absolute-Value/ToDoCalendar)
 - Unity
   - VRで蕎麦運びをするゲームとデバイスを作りました
   - <img src="/assets/images/VR.png" height="300"/>
