@@ -27,8 +27,7 @@ layout: home
 - Java
   - シューティングゲームを作成しました．
   - <img src="/assets/images/FiShooting.png" height="300"/>
-  - Javaを用いてAndroidアプリも作成しました
-  - ![TODOリスト付きカレンダー](https://github.com/Absolute-Value/ToDoCalendar)
+  - Javaを用いてAndroidアプリの[<b>TODOリスト付きカレンダー</b>](https://github.com/Absolute-Value/ToDoCalendar)も作成しました
 - Unity
   - VRで蕎麦運びをするゲームとデバイスを作りました
   - <img src="/assets/images/VR.png" height="300"/>
