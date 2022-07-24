@@ -17,11 +17,9 @@ layout: default
         <div class="post">
           <a href="{{ post.url }}">
             <img class="post_img" src="{{post.hero | relative_url}}">
-            <div class="post_detail">
-              <p>
-                <b>{{ post.title }}</b>
-              </p>
-              <p>{{ post.excerpt | remove:'概要' | remove:'1. どんなもの?' }}</p>
+            <div class="post_detail"> 
+              <b>{{ post.title }}</b>
+              <p class="post_p">{{ post.excerpt | remove:'概要' | remove:'1. どんなもの?' }}</p>
               <p>
                 <span class="fa fa-calendar"></span> {{ post.date | date: "%b %-d, %Y" }}
                 <span class="fa fa-folder"></span> {{ post.category }}
