@@ -1,5 +1,5 @@
 ---
-title: 軸屋敬介 | Keisuke Jikuya
+title: Keisuke Jikuya
 layout: home
 ---
 <a id="Profile"></a>
