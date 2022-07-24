@@ -3,7 +3,7 @@ title: "Detecting and Recognizing Human-Object Interactions"
 date: "2022-07-22 18:00:00"
 identifier: InteractNet
 category: HOI
-hero: /assets/images/posts/InteractNet/7.png
+hero: /assets/images/posts/InteractNet/1.png
 link: https://gkioxari.github.io/InteractNet/index.html
 tags: ["Human-Object Interaction Detection", "Dataset"]
 conference: CVPR
