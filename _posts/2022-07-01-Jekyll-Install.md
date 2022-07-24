@@ -4,7 +4,7 @@ date: "2022-07-01 00:00:00"
 identifier: Jekyll-Install
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
-tags: ["Note"]
+tags: ["Memo", "Jekyll"]
 math: true
 layout: note
 ---

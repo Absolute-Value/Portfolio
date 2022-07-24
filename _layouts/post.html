@@ -17,6 +17,12 @@ layout: header
     <p><span class="fa fa-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}</p>
     <p><span class="fa fa-flag"></span> {% for tag in page.tags %}{{tag}}, {% endfor %}</p>
     <p><span class="fa fa-graduation-cap"></span> {{page.conference}} ({{page.year}}) </p>
+    <div class="share-btn-wrapper">
+      <a href="https://twitter.com/share?text={{page.title}}&url=https://absolute-value.github.io{{page.url}}" class="share-btn share-twitter"><span class="fa fa-twitter fa-2x"></span></a>
+      <a href="https://www.facebook.com/sharer.php?u=https://absolute-value.github.io{{page.url}}" class="share-btn share-facebook"><span class="fa fa-facebook fa-2x"></span></a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://absolute-value.github.io{{page.url}}&title={{page.title}}" class="share-btn"><span class="fa fa-linkedin fa-2x"></span></a>
+      <a href="mailto:?subject={{page.title}}&body={{page.title}} https://absolute-value.github.io{{page.url}}" class="share-btn share-email"><span class="fa fa-envelope fa-2x"></span></a>
+    </div>
     {{content}}
     <div class="btn-wrapper">
       <a href="{{'posts' | relative_url}}" class="btn back_btn">一覧へ戻る</a>
