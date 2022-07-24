@@ -5,7 +5,7 @@ identifier: InteractNet
 category: HOI
 hero: /assets/images/posts/InteractNet/1.png
 link: https://gkioxari.github.io/InteractNet/index.html
-tags: ["Human-Object Interaction Detection", "Dataset"]
+tags: ["Human-Object Interaction Detection"]
 conference: CVPR
 year: 2018
 math: true
