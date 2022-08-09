@@ -1,7 +1,7 @@
 ---
 title: "Efficient Two-Stage Detection of Human–Object Interactionswith a Novel Unary–Pairwise Transformer"
 date: "2022-08-09 00:00:00"
-identifier: InteractNet
+identifier: Unary-Pairwise-Transformer
 category: HOI
 hero: /assets/images/posts/Unary–Pairwise-Transformer/1.png
 link: https://fredzzhang.com/unary-pairwise-transformers/
