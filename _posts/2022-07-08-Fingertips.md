@@ -5,7 +5,7 @@ identifier: Fingertips
 category: VR
 hero: /assets/images/posts/Fingertips/hero.png
 link: https://www.sciencedirect.com/science/article/pii/S2096579620300917
-tags: ["Virtual Reality", "Affine transformation", "Detection of fingertips", "Detection of hand", "Human-computer interaction"]
+tags: ["Virtual Reality", "Object Detection"]
 conference: Virtual Reality & Intelligent Hardware
 year: 2020
 math: true
