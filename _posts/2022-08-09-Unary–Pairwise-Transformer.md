@@ -41,7 +41,7 @@ layout: post
     - ![](/assets/images/posts/Unary–Pairwise-Transformer/4.png)
         
 - 第2層は競争層と呼ばれ、不正解のHOIスコアを減少させる
-    - 第2層に入力する前に、第1層の出力の人と物体以外のペアを削除し、マルチブランチフージョンでペアとなる人と物体のトークンとpositional encodingを融合してPairwiseトークンにする
+    - 第2層に入力する前に、第1層の出力の物体と物体のペアを削除し、マルチブランチフージョンでペアとなる人と物体のトークンとpositional encodingを融合してPairwiseトークンにする
     ![](/assets/images/posts/Unary–Pairwise-Transformer/5.png)
         
 - 最後にMLPに入力することでHOI分類を行う
