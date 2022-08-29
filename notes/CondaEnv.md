@@ -6,7 +6,6 @@ hero: https://www.python.jp/install/anaconda.png
 tags: ["Memo", "Anaconda"]
 math: true
 layout: note
-excerpt: Anacondaの環境構築に役立ちそうな個人的メモです。
 ---
 
 Anacondaの環境構築に役立ちそうな個人的メモです。

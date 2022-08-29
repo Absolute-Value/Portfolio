@@ -6,7 +6,6 @@ hero: /assets/images/note.jpg
 tags: ["Memo"]
 math: true
 layout: note
-excerpt: ドイツ語の授業のメモです。
 ---
 
 ドイツ語の授業のメモです。

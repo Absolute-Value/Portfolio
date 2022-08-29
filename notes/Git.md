@@ -6,7 +6,6 @@ hero: https://tech-diary.net/wp-content/uploads/2021/10/how-to-use-git-and-githu
 tags: ["Memo", "Git"]
 math: true
 layout: note
-excerpt: Git操作で役に立ちそうな個人的メモです。
 ---
 
 Git操作で役に立ちそうな個人的メモです。
