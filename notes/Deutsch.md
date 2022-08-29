@@ -4,7 +4,6 @@ date: "2019-07-02 12:00:00"
 category: "Note"
 hero: /assets/images/note.jpg
 tags: ["Memo"]
-math: true
 layout: note
 ---
 

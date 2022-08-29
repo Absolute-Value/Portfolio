@@ -1,6 +1,5 @@
 ---
 layout: default
-excerpt_separator: <!--more-->
 ---
 
 <!DOCTYPE html>
@@ -15,7 +14,7 @@ excerpt_separator: <!--more-->
     <div class="myposts">
       {% assign pages = site.pages | sort: "date" | reverse %}
       {% for note in pages %}
-        {% if note.category == 'Note' %}
+        {% if note.category == page.list %}
           <div class="post">
             <a href="{{ note.url }}">
               <img class="post_img" src="{{ note.hero | relative_url }}">
