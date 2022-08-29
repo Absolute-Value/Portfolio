@@ -32,4 +32,4 @@ layout: home
   - VRで蕎麦運びをするゲームとデバイスを作りました
   - <img src="/assets/images/VR.png" height="300"/>
 - htmlとCSS
-  - 本ページはjekyllを用いて、themeに頼らず生のhtmlとCSSから作成しました．
+  - 本ページはjekyllを用いて、既存のテーマに頼らずhtmlとCSSから作成しました．
