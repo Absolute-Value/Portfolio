@@ -251,4 +251,5 @@ cherries Carol moose
 
 例によってhtmlではきれいに表示されません...
 
-# つづく
+# つづき
+[退屈なことはPythonにやらせよう②]({{ 'blogs/python-boring-2' | relative_url }})

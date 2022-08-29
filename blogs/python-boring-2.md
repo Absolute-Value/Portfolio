@@ -9,7 +9,7 @@ layout: blog
 excerpt: 書籍 「退屈なことはPythonにやらせよう 」（原書名『Automate the Boring Stuff with Python』）のpythonプログラムの実装の続き（7・8章）です。
 ---
 
-書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続きです．
+書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続き（7・8章）です．
 
 <!--more-->
 
@@ -233,3 +233,6 @@ for file in os.listdir(sys.argv[1]):
 ```console
 $ 
 ```
+
+# つづき
+[退屈なことはPythonにやらせよう③]({{ 'blogs/python-boring-3' | relative_url }})

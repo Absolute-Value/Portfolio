@@ -9,7 +9,7 @@ layout: blog
 excerpt: 書籍 「退屈なことはPythonにやらせよう 」（原書名『Automate the Boring Stuff with Python』）のpythonプログラムの実装の続き（9章）です。
 ---
 
-書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続きです．
+書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続き（9章）です．
 
 <!--more-->
 
@@ -330,3 +330,6 @@ Files/spam003.txt Files/spam004.txt
 ```
 左が変更前、右が変更後。  
 3以降がずれたため、連番に隙間ができた。
+
+# つづき
+作成中...
