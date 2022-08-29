@@ -25,7 +25,7 @@ Jekyllを使用したホームページの作成方法の個人的なメモで�
 $ brew install chruby ruby-install
 ```
 
-rubyのインストール
+<b>ruby</b>のインストール
 
 ```console
 $ ruby-install ruby
