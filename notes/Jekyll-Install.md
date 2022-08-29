@@ -5,6 +5,7 @@ category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
 layout: note
+excerpt: Jekyllを使用したホームページの作成方法の個人的なメモです。
 ---
 
 Jekyllを使用したホームページの作成方法の個人的なメモです。
@@ -56,7 +57,7 @@ $ gem install jekyll
 ./.zshrc内に誤ったバージョンを追加してしまっているため，[vi]()などで文を削除すると解決する
 
 ## Jekyll使い方はコチラ
-[Jekyll ホームページ 個人的メモ]()
+[Jekyll ホームページ 個人的メモ]({{ 'notes/Jekyll' | relative_url }})
 
 # その他設定
 [Markdownで数式を使用する方法](https://qiita.com/memakura/items/e4d2de379f98ad7be498)

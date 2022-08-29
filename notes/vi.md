@@ -5,6 +5,7 @@ category: "Note"
 hero: /assets/images/note.jpg
 tags: ["Note"]
 layout: note
+excerpt: vi早見表の紙があり，残さず捨てるのはもったいないので載せておきます。
 ---
 
 vi早見表の紙があり，残さず捨てるのはもったいないので載せておきます。

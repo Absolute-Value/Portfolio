@@ -5,13 +5,14 @@ category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
 layout: note
+excerpt: Jekyll関連で役に立ちそうな個人的メモです。
 ---
 
 Jekyll関連で役に立ちそうな個人的メモです。
 
 <!--more-->
 
-[インストール関連]()
+[インストール関連]({{ 'notes/Jekyll-Install' | relative_url }})
 
 # Jekyllの新規作成
 
