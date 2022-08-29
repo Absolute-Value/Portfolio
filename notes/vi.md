@@ -1,14 +1,14 @@
 ---
 title: "vi 早見表"
 date: "2022-07-02 12:00:00"
-identifier: vi
 category: "Note"
 hero: /assets/images/note.jpg
 tags: ["Note"]
 layout: note
+excerpt: vi早見表の紙があり，残さず捨てるのはもったいないので載せておきます。
 ---
 
-vi早見表の紙があり，残さず捨てるのはもったいないので載せておきます
+vi早見表の紙があり，残さず捨てるのはもったいないので載せておきます。
 <!--more-->
 
 viにはカーソル移動モード（コマンドモード）と入力モードがある．

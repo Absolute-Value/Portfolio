@@ -1,11 +1,11 @@
 ---
 title: "Hugoによるホームページ構築メモ"
 date: 2022-05-02
-identifier: Hugo
 category: "Note"
 hero: https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg
 tags: ["Memo", "Hugo"]
 layout: note
+excerpt: 以前Githubのpagesデフォルトで作ったホームページが寂しく，ポストのページの見栄えが悪かったので、https://zenn.dev/okaponta/articles/c302f58507febc を参考にHugoを使ったホームページに作り直しました。  
 ---
 
 ### <span style="color: red; ">現在はHugoを使用していません　</span>

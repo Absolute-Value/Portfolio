@@ -1,15 +1,15 @@
 ---
 title: "Git 個人的メモ"
 date: "2022-06-20 12:00:00"
-identifier: Git
 category: "Note"
 hero: https://tech-diary.net/wp-content/uploads/2021/10/how-to-use-git-and-github.png
 tags: ["Memo", "Git"]
 math: true
 layout: note
+excerpt: Git操作で役に立ちそうな個人的メモです。
 ---
 
-Git操作で役に立ちそうな個人的メモです
+Git操作で役に立ちそうな個人的メモです。
 
 <!--more-->
 

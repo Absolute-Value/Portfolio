@@ -1,12 +1,12 @@
 ---
 title: "ドイツ語　授業メモ"
 date: "2019-07-02 12:00:00"
-identifier: Deutsch
 category: "Note"
 hero: /assets/images/note.jpg
 tags: ["Memo"]
 math: true
 layout: note
+excerpt: ドイツ語の授業のメモです。
 ---
 
 ドイツ語の授業のメモです。

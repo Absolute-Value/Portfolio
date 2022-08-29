@@ -1,14 +1,15 @@
 ---
 title: "Anaconda 環境構築 個人的メモ"
 date: 2022-05-10
-identifier: CondaEnv
 category: "Note"
 hero: https://www.python.jp/install/anaconda.png
 tags: ["Memo", "Anaconda"]
 math: true
 layout: note
+excerpt: Anacondaの環境構築に役立ちそうな個人的メモです。
 ---
-Anacondaの環境構築に役立ちそうな個人的メモです
+
+Anacondaの環境構築に役立ちそうな個人的メモです。
 
 <!--more-->
 ## 仮想環境の確認

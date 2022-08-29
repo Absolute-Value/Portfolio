@@ -1,19 +1,19 @@
 ---
 title: "Jekyll ホームページ 個人的メモ"
 date: "2022-07-01 12:00:00"
-identifier: Jekyll
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
 math: true
 layout: note
+excerpt: Jekyll関連で役に立ちそうな個人的メモです。
 ---
 
-Jekyll関連で役に立ちそうな個人的メモです
+Jekyll関連で役に立ちそうな個人的メモです。
 
 <!--more-->
 
-[インストール関連]({% post_url 2022-07-01-Jekyll-Install %})
+[インストール関連]()
 
 # Jekyllの新規作成
 
@@ -91,7 +91,7 @@ $ bash git.sh
 # お役立ちリンク
 - [自分で作ったWebページをインターネット上に公開しよう！](https://prog-8.com/docs/github-pages)
 - [クイックスタート \| Jekyll](http://jekyllrb-ja.github.io/docs/)
-- [テンプレート言語Liquid](https://clipkit.co/docs/ja/admin/liquid/)
+- [テンプレート言語Liquid](https://shopify.github.io/liquid/)
   - [Liquidで四則演算](https://blackpigtail.com/web-design/2680)
 - [アイコン一覧](https://johobase.com/font-awesome-icon-font-list-free/)
 - [markdownでの画像リサイズ](https://qiita.com/shti_f/items/b819d7fd8cb79ae29687)
