@@ -59,20 +59,21 @@ layout: header
     <h1>Recent Notes</h1>
     <div class="myposts">
       {% assign count = 0 %}
-      {% for post in site.posts %}
-        {% if post.layout != 'post'%}
+      {% assign pages = site.pages | sort: "date" | reverse %}
+      {% for note in pages %}
+        {% if note.category == 'Note' %}
           {% if count < 3 %}
             <div class="post">
-              <a href="{{ post.url }}">
-                <img class="post_img" src="{{post.hero | relative_url}}">
+              <a href="{{ note.url }}">
+                <img class="post_img" src="{{ note.hero | relative_url }}">
                 <div class="post_detail">
                   <p>
-                    <b>{{ post.title }}</b>
+                    <b>{{ note.title }}</b>
                   </p>
-                  <p>{{ post.excerpt | remove:'概要' }}</p>
+                  <p>{{ note.excerpt }}</p>
                   <p>
-                    <span class="fa fa-calendar"></span> {{ post.date | date: "%b %-d, %Y" }}
-                    <span class="fa fa-folder"></span> {{ post.category }}
+                    <span class="fa fa-calendar"></span> {{ note.date | date: "%b %-d, %Y" }}
+                    <span class="fa fa-flag"></span> {% for tag in note.tags %}{{tag}}, {% endfor %}
                   </p>
                 </div>
               </a>
