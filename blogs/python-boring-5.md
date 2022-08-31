@@ -11,6 +11,12 @@ excerpt: 書籍 「退屈なことはPythonにやらせよう 」（原書名『
 
 書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続き（12章）です．
 
+これまで：  
+[退屈なことはPythonにやらせよう①]({{ 'blogs/python-boring-1' | relative_url }})  
+[退屈なことはPythonにやらせよう②]({{ 'blogs/python-boring-2' | relative_url }})  
+[退屈なことはPythonにやらせよう③]({{ 'blogs/python-boring-3' | relative_url }})  
+[退屈なことはPythonにやらせよう④]({{ 'blogs/python-boring-4' | relative_url }})
+
 <!--more-->
 
 # 12章 Excelシート
