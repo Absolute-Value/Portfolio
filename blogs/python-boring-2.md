@@ -90,10 +90,7 @@ Text
 
 # 8章　ファイルの読み書き
 ## 8.7 マルチクリップボード
-クリップボードのテキストを保存・復元  
-引数 "save \<keyword\>"：クリップボードをキーワードに紐づけて保存  
-引数 "\<keyword\>"：キーワードに紐づけられたテキストをクリップボードにコピー  
-引数 "list"：全キーワードをクリップボードにコピー  
+クリップボードのテキストを保存・読込を行うプログラム
 
 プログラム（[8.7_MultiClipBoard.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.7_MultiClipBoard.py)）
 ```python
@@ -101,23 +98,47 @@ import shelve, pyperclip, sys
 
 mcb_shelf = shelve.open('mcb')
 
+mode = sys.argv[1].lower()
+clip_board = pyperclip.paste()
+
 # クリップボードの内容を保存
-if len(sys.argv) == 3 and sys.argv[1].lower() == 'save':
-    mcb_shelf[sys.argv[2]] = pyperclip.paste()
+if len(sys.argv) == 3 and mode == 'save':
+    keyword = sys.argv[2]
+    mcb_shelf[keyword] = clip_board
+    print(f"クリップボード上の {clip_board} を {keyword}　として保存しました")
+
 elif len(sys.argv) == 2:
     # キーワード一覧と，内容の読み込み
-    if sys.argv[1].lower() == 'list':
+    if mode == 'list':
         pyperclip.copy(str(list(mcb_shelf.keys())))
+        print("全キーワードをクリップボードにコピーしました")
     elif sys.argv[1] in mcb_shelf:
-        pyperclip.copy(mcb_shelf[sys.argv[1]])
+        content = mcb_shelf[sys.argv[1]]
+        pyperclip.copy(content)
+        print(f"{content} をクリップボードにコピーしました")
 
 mcb_shelf.close()
 ```
 
-出力
+クリップ上の python を 1 として保存します
 ```console
-$ 
+$ python3 8.7_MultiClipBoard.py save 1
+クリップボード上の python を 1　として保存しました
 ```
+
+1をクリップボードに読み込みます
+```console
+$ python3 8.7_MultiClipBoard.py 1
+python をクリップボードにコピーしました
+```
+
+先ほど保存した python をクリップボードに読み込むことができました  
+キーワード一覧も取得してみます
+```console
+$ python3 8.7_MultiClipBoard.py list
+全キーワードをクリップボードにコピーしました
+```
+クリップボードには正しく ['1'] が入っていました。
 
 ## 8.10 演習
 ### 8.10.1 マルチクリップボードを拡張
@@ -129,27 +150,40 @@ import shelve, pyperclip, sys
 
 mcb_shelf = shelve.open('mcb')
 
+mode = sys.argv[1].lower()
+clip_board = pyperclip.paste()
+
 # クリップボードの内容を保存
 if len(sys.argv) == 3:
-    if sys.argv[1].lower() == 'save':
-        mcb_shelf[sys.argv[2]] = pyperclip.paste()
-    elif sys.argv[1].lower() == 'delete':
-        mcb_shelf.pop(sys.argv[2])
+    keyword = sys.argv[2]
+    if mode == 'save':
+        mcb_shelf[keyword] = clip_board
+        print(f"クリップボード上の {clip_board} を {keyword}　として保存しました")
+    elif mode == 'delete':
+        mcb_shelf.pop(keyword)
+        print(f"{keyword}を削除しました")
 
 elif len(sys.argv) == 2:
     # キーワード一覧と，内容の読み込み
-    if sys.argv[1].lower() == 'list':
+    if mode == 'list':
         pyperclip.copy(str(list(mcb_shelf.keys())))
+        print("全キーワードをクリップボードにコピーしました")
     elif sys.argv[1] in mcb_shelf:
-        pyperclip.copy(mcb_shelf[sys.argv[1]])
+        content = mcb_shelf[sys.argv[1]]
+        pyperclip.copy(content)
+        print(f"{content} をクリップボードにコピーしました")
 
 mcb_shelf.close()
 ```
 
-出力
+先ほど保存した 1 を削除し、一覧をクリップボードに取得しました
 ```console
-$ 
+$ python3 8.10.1_MultiClipBoard.py delete 1
+1を削除しました
+$ python3 8.10.1_MultiClipBoard.py list    
+全キーワードをクリップボードにコピーしました
 ```
+クリップボードには [] が入っており、1 が正しく消えていました
 
 ### 8.10.2 作文ジェネレータ
 テキストファイルを読み込み，ADJECTIVE(形容詞),NOUN(名詞),ADVERB(副詞),VERB(動詞)を書き換える作文ジェネレータ
