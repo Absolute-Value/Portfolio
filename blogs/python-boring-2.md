@@ -203,7 +203,6 @@ The silly panda walked to the chandelier and then screamed. A nearby pickup truc
 指定したフォルダ内のtxtファイルを開いて，入力した正規表現にマッチする箇所を探索する  
 引数 "\<path\>"：探索するフォルダ
 
-
 プログラム（[8.10.3_RegexSearcher.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.10.3_RegexSearcher.py)）
 ```python
 import re, sys, os
@@ -231,8 +230,16 @@ for file in os.listdir(sys.argv[1]):
 
 出力
 ```console
-$ 
+$ python3 8.10.3_RegexSearcher.py Composition
+正規表現を入力してください：f{2}    
+Origin.txt
+The ADJECTIVE panda walked to the NOUN and then VERB. A nearby NOUN was una"ff"ected by these events.
+Generated.txt
+The silly panda walked to the chandelier and then screamed. A nearby pickup truck was una"ff"ected by these events.
+kei@kenoMacBook-Pro 08 % 
 ```
+[Composition](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08/Composition)フォルダ内のtxtファイルの中で、  
+fが二回続く箇所を探索し、見つけることができている。
 
 # つづき
 [退屈なことはPythonにやらせよう③]({{ 'blogs/python-boring-3' | relative_url }})
