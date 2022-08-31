@@ -77,7 +77,7 @@ Origin.txt
 Generated.txt
 Done.
 ```
-[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08)の中身を丸ごと、zipファイルにすることができた。
+[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08)の中身を丸ごと、zipファイルにすることができました
 
 ## 9.7 演習
 ### 9.7.1　選択コピー
@@ -116,8 +116,18 @@ select_copy(sys.argv[1], sys.argv[2])
 
 出力
 ```console
-$ 
+$ python3 9.7.1_SelectCopy.py ../08 py
+Making folder: ./08
+Copy file: ./08/8.7_MultiClipBoard.py
+Making folder: ./08
+Copy file: ./08/8.10.3_RegexSearcher.py
+Making folder: ./08
+Copy file: ./08/8.10.1_MultiClipBoard.py
+Making folder: ./08
+Copy file: ./08/8.10.2_CompositionGenerator.py
+Done.
 ```
+[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08)の中の .py ファイルをコピーすることができました
 
 ### 9.7.2 巨大なフォイルを探す
 ディレクトリツリーを渡り歩いて、サイズの大きなサイズのフォルダを探し出す  
@@ -164,10 +174,17 @@ else:
     search_file(sys.argv[1], sys.argv[2], sys.argv[3])
 ```
 
-出力
+[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08)の中で、1KBを超えているファイルを探します
+
 ```console
-$ 
+$ python3 9.7.2_SearchLargeFile.py ../08 1 KB
+./08/8.7_MultiClipBoard.py : 1.24 KB
+./08/8.10.1_MultiClipBoard.py : 1.40 KB
+Done.
 ```
+
+1.24KBの8.7_MultiClipBoard.pyと  
+1.40KBの8.10.1_MultiClipBoard.pyを見つけることができました
 
 ### 9.7.3 飛びつき連番の作成
 9.7.3.1の準備用に番号の飛んだ連番を作成する
@@ -213,7 +230,7 @@ spam021.txt
 spam022.txt
 spam023.txt
 ```
-4, 10, 11が飛ばされたファイルを作成することができた。
+4, 10, 11が飛ばされたファイルを作成することができました
 
 ### 9.7.3.1 連番の飛びを埋める
 指定した接頭語を持つ連番ファイルを探し出し、連番が飛んでいる箇所を見つけ、後に続くファイルの名前を変更する
@@ -278,7 +295,7 @@ Files/spam022.txt Files/spam019.txt
 Files/spam023.txt Files/spam020.txt
 ```
 左が変更前、右が変更後。  
-連番の隙間を埋めることができた。
+連番の隙間を埋めることができました
 
 ### 9.7.3.2 連番の隙間を開ける(9.7.3.1の逆)
 連番ファイルの間に隙間を開けて、他の連番ファイルを入れられるようにする
@@ -329,7 +346,7 @@ Files/spam004.txt Files/spam005.txt
 Files/spam003.txt Files/spam004.txt
 ```
 左が変更前、右が変更後。  
-3以降がずれたため、連番に隙間ができた。
+3以降がずれたため、連番に隙間ができました
 
 # つづき
 作成中...
