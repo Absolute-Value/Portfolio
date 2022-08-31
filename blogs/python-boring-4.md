@@ -459,10 +459,24 @@ if len(sys.argv) < 1:
 link_search(' '.join(sys.argv[1:]))
 ```
 
-出力
+[このホームページのBlog](https://absolute-value.github.io/blogs)をダウンロードしてみます
 ```console
-$ 
+$ python3 11.10.4_LinkSearch.py https://absolute-value.github.io/blogs
+/index はリンク切れです．
+/index はリンク切れです．
+/blogs はリンク切れです．
+/notes はリンク切れです．
+/posts はリンク切れです．
+/blogs/python-boring-4.html はリンク切れです．
+/blogs/python-boring-3.html はリンク切れです．
+/blogs/python-boring-2.html はリンク切れです．
+/blogs/python-boring-1.html はリンク切れです．
+mailto:jikuya[at]cv.info.gifu-u.ac.jp はリンク切れです．
+https://twitter.com/jky_kei.htmlをDownloadsに保存しました
+https://github.com/Absolute-Value.htmlをDownloadsに保存しました
 ```
+jekyllのせいか相対リンクになっていて拾えていませんね...  
+twitterとgithubだけ正しくダウンロードできてました
 
 # つづき
 作成中...
