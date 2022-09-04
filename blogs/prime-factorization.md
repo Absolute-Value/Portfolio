@@ -16,7 +16,7 @@ excerpt: 素因数分解を様々なプログラミング言語で実装しま�
 ## python
 まずはpythonです
 
-PrimeFactorization.py
+[PrimeFactorization.py](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.py)
 ```python
 def PrimeFactorization(num):
     factors = []
@@ -48,7 +48,7 @@ $ python3 PrimeFactorization.py
 ## java
 続いて、同じ内容をjavaでやってみました
 
-PrimeFactorization.java
+[PrimeFactorization.java](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.java)
 ```java
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -96,7 +96,7 @@ $ java PrimeFactorization
 ## C
 c言語でもやってみました
 
-PrimeFactorization.c
+[PrimeFactorization.c](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.c)
 ```c
 #include <stdio.h>
 
