@@ -61,7 +61,7 @@ layout: post
     
     - 事前学習にSynthetic（合成データ）を使用し、実データ100%でファインチューニングした結果がほとんどで1位
 - HOI検出性能（既存手法との比較）
-    - [](/assets/images/posts/EgocentricHOI/8.png)
+    - ![](/assets/images/posts/EgocentricHOI/8.png)
     - 物体には強いが、合成データの手のリアリティが低いためか性能が低い
         - BS1：単一オブジェクト
         - BS2：実データからのサンプリング画像
