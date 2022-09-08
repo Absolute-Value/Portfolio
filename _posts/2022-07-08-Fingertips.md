@@ -44,15 +44,15 @@ layout: post
 
 - 分類モデルごとの性能比較
   - VGG16の損失関数(Loss)と座標の平均絶対誤差(MAE)が最小 = 最も良い
-  ![](/assets/images/posts/Fingertips/3.png)
-  ![](/assets/images/posts/Fingertips/4.png)
+  - ![](/assets/images/posts/Fingertips/3.png)
+  - ![](/assets/images/posts/Fingertips/4.png)
 
 - 既存の指先検出手法との比較
   - 提案手法(Proposed Method)の座標のMAEが最小 = 最も良い
   - ただし、ネットワークが重いため一番遅い
   - 30FPSの33.33msは下回っているため問題なし  
-  ![](/assets/images/posts/Fingertips/5.png)
+  - ![](/assets/images/posts/Fingertips/5.png)
 
 - オブジェクト操作のリアルタイムデモ
   - 拡大縮小、回転、平行移動  
-  ![](https://user-images.githubusercontent.com/37298971/78501859-96a26b00-777f-11ea-9f33-977ea8feda09.gif)
+  - ![](https://user-images.githubusercontent.com/37298971/78501859-96a26b00-777f-11ea-9f33-977ea8feda09.gif)
