@@ -2,7 +2,7 @@
 title: "VSCode 早見表"
 date: "2022-10-11 19:00:00"
 category: "Note"
-hero: /assets/images/note.jpg
+hero: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png
 tags: ["Note"]
 layout: note
 excerpt: VSCodeのコマンドメモ
