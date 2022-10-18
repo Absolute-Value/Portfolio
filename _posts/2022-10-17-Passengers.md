@@ -2,7 +2,7 @@
 title: "Correlating Belongings with Passengers in a Simulated Airport Security Checkpoint"
 date: "2022-10-17 00:00:00"
 identifier: Passengers
-category: HOI
+category: "Object Detection"
 hero: /assets/images/posts/Passengers/6.png
 link: https://dl.acm.org/doi/abs/10.1145/3243394.3243703
 tags: ["Object Detection", "Tracking"]
