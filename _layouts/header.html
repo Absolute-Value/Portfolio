@@ -4,6 +4,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/markdown.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
     <link rel="icon" href="{{ site.favicon | relative_url }}">
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -12,8 +13,8 @@
     <header>
       <div class="container">
         <div class="header-left">
-          <img class="logo" src="{{'assets/images/kei.png' | relative_url}}">
-          <a href="{{ 'index' | relative_url }}">{{site.name}}</a>
+          <a href="{{ 'index' | relative_url }}" class="header-logo"><img class="logo" src="{{'assets/images/kei.png' | relative_url}}"></a>
+          <a href="{{ 'index' | relative_url }}" class="header-name">{{site.name}}</a>
         </div>
         <div class="header-right">
           <a href="{{ 'index' | relative_url }}">Home</a>
