@@ -59,7 +59,7 @@ $ ./git.sh <commit message>
 1. フォルダを保存したいディレクトリに移動  
 2. Gitのリポジトリをクローン
 ```bash
-git clone [GitリポジトリのURL]
+git clone <GitリポジトリのURL\
 ```
 3. ファイル->フォルダを開く で、クローンしたディレクトリを開く  
 
