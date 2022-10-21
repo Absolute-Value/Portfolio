@@ -2,7 +2,7 @@
 title: "ドイツ語　授業メモ"
 date: "2019-07-02 12:00:00"
 category: "Note"
-hero: http://wheat.x0.to/game/photo/g_city/g_city005.jpg
+hero: /assets/images/notes/Deutsch/1.jpeg
 tags: ["Memo"]
 layout: note
 excerpt: ドイツ語の授業のメモです。
