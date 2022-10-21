@@ -10,7 +10,7 @@ pagination:
   enabled: true
   per_page: 8
   permalink: '/:num/'
-  title: ' Posts - :num'
+  title: ' Posts | :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
