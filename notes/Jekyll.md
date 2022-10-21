@@ -88,8 +88,7 @@ $ bash git.sh
 \`\`\`で囲む
 
 # Postsのページの作成
-## 参考サイト
-[Jekyll:Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2)
+参考：[Jekyll:Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2)
 
 ## Jekyll:Paginate V2をダウンロード
 gemfileを作成
@@ -113,6 +112,7 @@ end
 ```console
 bundle install
 ```
+参考：[理解必須！gemsのインストール方法とインストール場所](https://www.sejuku.net/blog/19603)
 
 ## _config.ymlを編集
 _config.ymlに以下を追加する
