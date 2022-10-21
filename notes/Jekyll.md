@@ -79,13 +79,70 @@ cd ../
 $ bash git.sh
 ```
 
-引数にコミットメッセージ入れれえます
+引数にコミットメッセージ入れれます
 
 # Markdown記法
 ## インラインコード
-\'で囲む (Shift + @)
+\`で囲む (Shift + @)
 ## コード
-\'\'\'で囲む
+\`\`\`で囲む
+
+# Postsのページの作成
+## 参考サイト
+[Jekyll:Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2)
+
+## Jekyll:Paginate V2をダウンロード
+gemfileを作成
+```console
+bundle init
+```
+
+gemfileを編集
+```console
+vim gemfile
+```
+以下を追加する
+```ruby
+group :jekyll_plugins do
+  gem "jekyll-paginate-v2"
+  gem "jekyll-feed"
+end
+```
+
+一括インストール
+```console
+bundle install
+```
+
+## _config.ymlを編集
+_config.ymlに以下を追加する
+```yml
+gems:
+  - jekyll-paginate-v2
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 8 # 一つのページに表示するPostの数
+  permalink: '/:num/'
+  title: ' Title - :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+```
+
+## 表示させたいページのmarkdownの編集
+表示させたいページのマークダウンの頭に以下を追加
+```markdown
+---
+permalink: '/link/' # ページのURL末尾を設定してください
+pagination:
+  enabled: true
+---
+```
+
+## 表示させたいページのhtmlの編集
+表示させたいページのhtmlを[コチラ](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/examples/01-typicalblog/_layouts/home.html)を参考に記述  
+ここにコードを載せると誤認識するので無理でした...
 
 # お役立ちリンク
 - [自分で作ったWebページをインターネット上に公開しよう！](https://prog-8.com/docs/github-pages)

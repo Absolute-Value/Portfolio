@@ -13,7 +13,7 @@ layout: default
   <body>
     {{ content }}
     <div class="myposts">
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
         {% if post.layout == 'post'%}
         <div class="post">
           <a href="{{ post.url }}">
@@ -31,6 +31,18 @@ layout: default
         </div>
         {% endif %}
       {% endfor %}
+    </div>
+    {% if paginator.total_pages > 1 %}
+    <div class="btn-wrapper">
+      {% if paginator.previous_page %}
+      <a href="{{ 'posts' | relative_url }}" class="btn back_btn previous"><<<</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn back_btn previous"><</a>
+      {% endif %}
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn back_btn next">></a>
+      <a href="{{ 'posts' | relative_url }}/{{paginator.total_pages}}/" class="btn back_btn previous">>>></a>
+      {% endif %}
+    {% endif %}
     </div>
   </body>
 </html>
