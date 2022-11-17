@@ -12,7 +12,7 @@ layout: header
   <body>
     <img src="{{page.hero | relative_url}}" class="hero">
     <h1>{{page.title}}</h1>
-    <p><span class="fa fa-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}</p>
+    <p><span class="fa fa-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}{% if page.update %} (Updated: {{ page.update | date: "%b %-d, %Y" }}){% endif %}</p>
     <p><span class="fa fa-flag"></span> {% for tag in page.tags %}{{tag}}, {% endfor %}</p>
     <div class="share-btn-wrapper">
       <a href="https://twitter.com/share?text={{page.title}}&url=https://absolute-value.github.io{{page.url}}" class="share-btn share-twitter"><span class="fa fa-twitter fa-2x"></span></a>

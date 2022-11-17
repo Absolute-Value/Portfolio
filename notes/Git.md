@@ -1,6 +1,6 @@
 ---
 title: "Git 個人的メモ"
-date: "2022-06-20 12:00:00"
+date: 2022-06-20
 category: "Note"
 hero: https://tech-diary.net/wp-content/uploads/2021/10/how-to-use-git-and-github.png
 tags: ["Memo", "Git"]
