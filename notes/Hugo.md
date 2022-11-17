@@ -1,6 +1,7 @@
 ---
 title: "Hugoによるホームページ構築メモ"
 date: 2022-05-02
+update: 2022-05-02
 category: "Note"
 hero: https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg
 tags: ["Memo", "Hugo"]

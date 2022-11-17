@@ -1,6 +1,7 @@
 ---
 title: "vi 早見表"
 date: "2022-07-02 12:00:00"
+update: "2022-07-02 12:00:00"
 category: "Note"
 hero: /assets/images/note.jpg
 tags: ["Note"]

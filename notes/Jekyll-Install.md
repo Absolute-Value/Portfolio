@@ -1,6 +1,7 @@
 ---
 title: "Jekyllによるホームページ構築メモ"
 date: "2022-07-01 00:00:00"
+update: "2022-09-08 06:00:00"
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]

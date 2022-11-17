@@ -1,6 +1,7 @@
 ---
 title: "Git 個人的メモ"
 date: 2022-06-20
+update: 2022-07-18
 category: "Note"
 hero: https://tech-diary.net/wp-content/uploads/2021/10/how-to-use-git-and-github.png
 tags: ["Memo", "Git"]
