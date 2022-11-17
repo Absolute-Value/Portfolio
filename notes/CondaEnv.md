@@ -1,7 +1,7 @@
 ---
 title: "Anaconda 環境構築 個人的メモ"
 date: 2022-05-10
-update: 2022-11-17
+update: "2022-11-17 12:00:00"
 category: "Note"
 hero: https://www.python.jp/install/anaconda.png
 tags: ["Memo", "Anaconda"]
