@@ -38,6 +38,14 @@ Anacondaの全部のライブラリをインストールできる
 
 など
 
+### Pathを指定してインストール
+
+-pオプションを用いて、インストールするPathを指定することができる
+
+```console
+$ conda create -p <path/name> anaconda
+```
+
 ## 仮想環境の起動
 
 ```console
