@@ -79,7 +79,7 @@ $ conda list -e > conda_requirements.txt
 
 新規再構築
 ```console
-$ conda create -n <name> --file requirements.txt
+$ conda create -n <name> -r requirements.txt
 ```
 
 既存環境への再構築
