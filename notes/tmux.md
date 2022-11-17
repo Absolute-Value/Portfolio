@@ -62,13 +62,13 @@ tmux a
 | SPACE | レイアウトを変更 |
 
 # tmux.confの変更
-tmux.confを編集し、ホームディレクトリに配置することで、以下のようにtmuxをカスタマイズすることができます。
+.tmux.confを編集し、ホームディレクトリに配置することで、以下のようにtmuxをカスタマイズすることができます。
 
 ![](/assets/images/notes/tmux/tmux.png)
 
 ## カスタマイズ例
 
-tmux.conf
+.tmux.conf
 ```config
 #マウス操作を有効にする
 set-option -g mouse on
