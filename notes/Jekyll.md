@@ -184,15 +184,11 @@ toc: true
 ```
 ## 表示させたいページのhtmlの編集
 
-html内の
-{% highlight html %}
-{ { content } }
-{% endhighlight %}
-を
+html内の目次を追加したい箇所に
 ```html
-{ { content | toc } }
+{ { content | toc_only } }
 ```
-に編集（中括弧はくっつけてください）
+を追加（中括弧はくっつけてください）
 
 ## CSSの変更
 
@@ -204,15 +200,22 @@ html内の
   border: 0px solid #e8e8e8;
   border-radius: 3px;
 }
+```
 
-.toc-entry ul{
-  padding: 0;
-}
+## その他の設定
 
-
-.section-nav li{
-  padding: 5px 0;
-}
+_config.ymlを編集
+```yml
+toc:
+  min_level: 1
+  max_level: 6
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
 ```
 
 # お役立ちリンク
