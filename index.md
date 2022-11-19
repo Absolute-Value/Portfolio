@@ -22,11 +22,11 @@ layout: home
 [<u>軸屋敬介</u>，加藤邦人，"複雑背景下での対象領域を考慮した異常検知"，第28回画像センシングシンポジウム SSII2022，IS2-19，2022.6.9](https://confit.atlas.jp/guide/event/ssii2022/subject/IS2-19/tables?cryptoId=)
 
 ## スキル | Skills
-- <img src="https://s3.techplay.jp/tp-images/column/1429/6375fc39bf885c1ec9d99445f8720127f1f728ac.png?w=600" height="30"/>python
+- <img src="https://s3.techplay.jp/tp-images/column/1429/6375fc39bf885c1ec9d99445f8720127f1f728ac.png?w=600" height="30"/>Python
   - 最も使用している言語です．<a href="https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python" style="color:#42b983">繰り返しの作業の自動化</a>や<a href="https://github.com/Absolute-Value/python-GUI" style="color:#42b983">GUIソフトの制作</a>，<a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" style="color:#42b983">Deep Learning</a>で使用しています．
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/1280px-PyTorch_logo_black.svg.png" height="20"/>
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/1280px-PyTorch_logo_black.svg.png" height="18"/>
   - Deep Learningで使用しているライブラリです．Tensorflowと比べて柔軟な実装が可能で最新手法の公開が早いです．Tensorflowもある程度使用できます．
-- <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1" height="30"/>java
+- <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1" height="30"/>Java
   - シューティングゲームを作成しました．
   - <img src="/assets/images/FiShooting.png" height="300"/>
   - Androidアプリの<a href="https://github.com/Absolute-Value/ToDoCalendar" style="color:#42b983">TODOリスト付きカレンダー</a>も作成しました．
@@ -38,6 +38,6 @@ layout: home
 - <img src="https://japan.xilinx.com/content/xilinx/ja/products/design-tools/embedded-software/ubuntu/_jcr_content/root/parsysFullWidth/xilinxflexibleslab/xilinxflexibleslab-parsys/xilinxcolumns_149128/childParsys-2/xilinximage.img.png/1644358907679.png" height="20"> Ubuntu
   - GPUノード用のOSです．無料なのに色々できて便利です．
   - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" style="color:#42b983">セットアップ</a>や修理をしています：
-- <img src="https://www.docker.com/wp-content/uploads/2022/05/Docker_Temporary_Image_Google_Blue_1080x1080_v1.png" height="40">
+- <img src="https://www.docker.com/wp-content/uploads/2022/05/Docker_Temporary_Image_Google_Blue_1080x1080_v1.png" height="30">Docker
   - GPUノードの個別の環境構築に使用しています．
   - これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの関係で非公開です．
