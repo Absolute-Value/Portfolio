@@ -5,6 +5,7 @@ excerpt_separator: <!--more-->
 highlighter: rouge
 gems:
   - jekyll-paginate-v2
+  - jekyll-toc
 # Pagination Settings
 pagination:
   enabled: true

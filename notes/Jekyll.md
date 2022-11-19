@@ -1,19 +1,20 @@
 ---
 title: "Jekyll ホームページ 個人的メモ"
 date: "2022-07-01 12:00:00"
-update: "2022-10-21 12:00:00"
+update: "2022-11-20 01:00:00"
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
 layout: note
 excerpt: Jekyll関連で役に立ちそうな個人的メモです。
+toc: true
 ---
 
 Jekyll関連で役に立ちそうな個人的メモです。
 
 <!--more-->
 
-[インストール関連]({{ 'notes/Jekyll-Install' | relative_url }})
+[インストール関連はコチラ]({{ 'notes/Jekyll-Install' | relative_url }})
 
 # Jekyllの新規作成
 
@@ -52,8 +53,10 @@ $ git commit -m "Comment"
 $ git push
 ```
 
-## 元のプロジェクトとサイト用のプロジェクトに対してgit操作するの面倒だったので自動化するbashを作成しました
-### git.sh
+## Git操作の自動化をするbashファイル
+元のプロジェクトとサイト用のプロジェクトに対してgit操作するの面倒だったので自動化するbashを作成しました
+
+git.sh
 {% highlight shell linenos %}
 #!/bin/sh
 
@@ -75,7 +78,7 @@ git push
 cd ../
 {% endhighlight %}
 
-### 実行
+実行
 ```console
 $ bash git.sh
 ```
@@ -89,7 +92,7 @@ $ bash git.sh
 \`\`\`で囲む
 
 # Postsのページの作成
-参考：[Jekyll:Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2)
+参考：[sverrirs/jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 
 ## Jekyll:Paginate V2をダウンロード
 gemfileを作成
@@ -144,6 +147,73 @@ pagination:
 ## 表示させたいページのhtmlの編集
 表示させたいページのhtmlを[コチラ](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/examples/01-typicalblog/_layouts/home.html)を参考に記述  
 ここにコードを載せると誤認識するので無理でした...
+
+# 目次の作成
+
+参考：[toshimaru/jekyll-toc](https://github.com/toshimaru/jekyll-toc)
+
+## jekyll-tocをダウンロード
+gemfileを編集
+```console
+vim gemfile
+```
+
+以下を追加する
+```ruby
+gem 'jekyll-toc'
+```
+
+インストール
+```console
+bundle install
+```
+
+## _config.ymlを編集
+_config.ymlに以下を追加する
+```yml
+gems:
+  - jekyll-toc
+```
+
+## 表示させたいページのmarkdownの編集
+表示させたいページのマークダウンの頭に以下を追加
+```markdown
+---
+toc: true
+---
+```
+## 表示させたいページのhtmlの編集
+
+html内の
+{% highlight html %}
+{ { content } }
+{% endhighlight %}
+を
+```html
+{ { content | toc } }
+```
+に編集（中括弧はくっつけてください）
+
+## CSSの変更
+
+```css
+.section-nav {
+  background-color: #e8e8e8;
+  margin: 0px 5%;
+  padding: 15px 1%;
+  border: 0px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+.toc-entry ul{
+  padding: 0;
+}
+
+
+.section-nav li{
+  padding: 5px 0;
+}
+```
 
 # お役立ちリンク
 - [自分で作ったWebページをインターネット上に公開しよう！](https://prog-8.com/docs/github-pages)
