@@ -7,6 +7,7 @@ hero: /assets/images/note.jpg
 tags: ["Note"]
 layout: note
 excerpt: vi早見表の紙があり，残さず捨てるのはもったいないので載せておきます。
+toc: true
 ---
 
 vi早見表の紙があり，残さず捨てるのはもったいないので載せておきます。

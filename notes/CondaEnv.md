@@ -7,6 +7,7 @@ hero: https://www.python.jp/install/anaconda.png
 tags: ["Memo", "Anaconda"]
 layout: note
 excerpt: Anacondaの環境構築に役立ちそうな個人的メモです。
+toc: true
 ---
 
 Anacondaの環境構築に役立ちそうな個人的メモです。
@@ -88,7 +89,7 @@ $ conda create -n <name> -r requirements.txt
 $ conda install -n <name> --file requirements.txt
 ```
 
-# 別のOS・アーキテクチャの場合
+## 別のOS・アーキテクチャの場合
 
 conda での requirements.txt の作り方
 ```console

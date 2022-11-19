@@ -7,6 +7,7 @@ hero: /assets/images/notes/tmux/tmux.png
 tags: ["Memo", "tmux"]
 layout: note
 excerpt: tmuxに役立ちそうな個人的メモです。
+toc: true
 ---
 
 tmuxに役立ちそうな個人的メモです。
@@ -36,6 +37,7 @@ tmux a
 ## セッション操作
 
 | キー操作 | 説明 |
+| - | - |
 | d | セッションから離脱(動かしたまま抜けるときはこれを使う) |
 | t | 時計を表示 |
 

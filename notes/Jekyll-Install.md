@@ -7,6 +7,7 @@ hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
 layout: note
 excerpt: Jekyllを使用したホームページの作成方法の個人的なメモです。
+toc: true
 ---
 
 Jekyllを使用したホームページの作成方法の個人的なメモです。

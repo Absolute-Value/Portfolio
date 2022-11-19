@@ -7,6 +7,7 @@ hero: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Co
 tags: ["Note"]
 layout: note
 excerpt: VSCodeのコマンドメモ
+toc: true
 ---
 
 VSCodeのコマンドメモ

@@ -7,6 +7,7 @@ hero: https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf0
 tags: ["Memo", "Hugo"]
 layout: note
 excerpt: 以前使用していたHugoを使ったホームページのメモです。
+toc: true
 ---
 
 ### <span style="color: red; ">現在はHugoを使用していません　</span>

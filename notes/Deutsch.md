@@ -7,6 +7,7 @@ hero: /assets/images/notes/Deutsch/1.jpeg
 tags: ["Memo"]
 layout: note
 excerpt: ドイツ語の授業のメモです。
+toc: true
 ---
 
 ドイツ語の授業のメモです。
