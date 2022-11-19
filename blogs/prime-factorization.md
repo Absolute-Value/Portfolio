@@ -8,13 +8,16 @@ tags: ["python", "java", "c"]
 math: true
 layout: blog
 excerpt: 素因数分解を様々なプログラミング言語で実装しました
+toc: true
 ---
+
+# はじめに
 
 個別塾のバイト中に素因数分解を教えていて、  
 「素因数分解は繰り返しのためコンピュータが処理を得意そう」  
 と感じたためプログラムを実装してみました
 
-## python
+# python
 まずはpythonです
 
 [PrimeFactorization.py](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.py)
@@ -46,7 +49,7 @@ $ python3 PrimeFactorization.py
 
 1024を素因数分解することができました
 
-## java
+# java
 続いて、同じ内容をjavaでやってみました
 
 [PrimeFactorization.java](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.java)
@@ -94,7 +97,7 @@ $ java PrimeFactorization
 先にコンパイルするの懐かしいです  
 変数や配列や関数の型の指定の不要なpythonって楽な言語だと改めて実感しました
 
-## C
+# C
 c言語でもやってみました
 
 [PrimeFactorization.c](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.c)

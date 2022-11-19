@@ -8,7 +8,10 @@ tags: ["python"]
 math: true
 layout: blog
 excerpt: 書籍 「退屈なことはPythonにやらせよう 」（原書名『Automate the Boring Stuff with Python』）のpythonプログラムを実装していきます．
+toc: true
 ---
+
+# はじめに
 
 書籍 「[退屈なことはPythonにやらせよう](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムを実装していきます．
 
