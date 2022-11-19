@@ -1,6 +1,7 @@
 ---
 title: "素因数分解プログラム"
 date: "2022-09-04 13:00:00"
+update: "2022-09-04 13:00:00"
 category: "Blog"
 hero: /assets/images/note.jpg
 tags: ["python", "java", "c"]

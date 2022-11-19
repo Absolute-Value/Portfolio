@@ -1,6 +1,7 @@
 ---
 title: "退屈なことはPythonにやらせよう②"
 date: "2022-07-19 21:00:00"
+update: "2022-07-19 21:00:00"
 category: "Blog"
 hero: https://github.com/oreilly-japan/automatestuff-ja/raw/master/automate-the-boring-stuff-with-python.png
 tags: ["python"]
