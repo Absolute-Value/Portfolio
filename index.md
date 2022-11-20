@@ -37,7 +37,7 @@ layout: home
   - 本ページはjekyllを用いて、既存のテーマに頼らずhtmlとCSSから<a href="https://github.com/Absolute-Value/Portfolio" style="color:#42b983">作成</a>しました．
 - <img src="https://japan.xilinx.com/content/xilinx/ja/products/design-tools/embedded-software/ubuntu/_jcr_content/root/parsysFullWidth/xilinxflexibleslab/xilinxflexibleslab-parsys/xilinxcolumns_149128/childParsys-2/xilinximage.img.png/1644358907679.png" height="20"> Ubuntu
   - GPUノード用のOSです．無料なのに色々できて便利です．
-  - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" style="color:#42b983">セットアップ</a>や修理をしています：
+  - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" style="color:#42b983">セットアップ</a>や修理をしています．
 - <img src="https://www.docker.com/wp-content/uploads/2022/05/Docker_Temporary_Image_Google_Blue_1080x1080_v1.png" height="30">Docker
   - GPUノードの個別の環境構築に使用しています．
   - これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの関係で非公開です．
