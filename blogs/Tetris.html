@@ -1,0 +1,47 @@
+---
+title: テトリス
+date: "2022-12-02 20:00:00"
+update: "2022-12-02 20:00:00"
+category: "Blog"
+hero: https://1.bp.blogspot.com/-nAt7uz4HQBw/Xbo7hrLz7-I/AAAAAAABV3w/Tww326Yi-I0Psq7wiZcwwnu3qUTbZwPAACNcBGAsYHQ/w1200-h630-p-k-no-nu/shape_polyomino.png
+tags: ["javascript"]
+layout: blog
+excerpt: JavascriptでテトリスをChatGPTに作ってもらいました
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>テトリス</title>
+  <style>
+    /* テトリスのフィールドのスタイル */
+    #field {
+      width: 200px;
+      height: 400px;
+      border: 2px solid #999;
+      margin-left: 5%;
+    }
+
+    /* テトリスのブロックのスタイル */
+    .block {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #333;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <p><a href="https://chat.openai.com/chat">ChatGPT</a>くん（AI）にJavascriptでテトリスを作ってもらいました</p>
+  <p>スペースキーで最初から、方向キーで左右の操作ができます（できる気がしない）</p>
+  <p>重なりもめちゃくちゃなので修正して行こうと思います。</p>
+  <canvas id="field" width="200" height="400"></canvas>
+  <p>
+    <button type="button" onclick="start()">Start</button>
+    <button type="button" onclick="stop()">Stop</button>
+  </p>
+  <p>SCORE: <span id="score">0</span></p>
+  <p>LEVEL: <span id="level">1</span></p>
+  <script src="Tetris.js"></script>
+</body>
