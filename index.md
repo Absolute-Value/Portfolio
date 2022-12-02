@@ -2,6 +2,22 @@
 title: Keisuke Jikuya
 layout: home
 ---
+<head>
+  <style>
+    .bachelor:hover {
+      color: #365CA3;
+    }
+
+    .labo:hover {
+      color: #FF5126;
+    }
+
+    .other:hover {
+      color: #42b983;
+    }
+  </style>
+</head>
+
 <a id="Profile"></a>
 # 自己紹介 | Profile
 
@@ -19,7 +35,7 @@ layout: home
 
 ## 発表 | Publication
 ### 国内学会 | Domestic Conference
-[<u>軸屋敬介</u>，加藤邦人，"複雑背景下での対象領域を考慮した異常検知"，第28回画像センシングシンポジウム SSII2022，IS2-19，2022.6.9](https://confit.atlas.jp/guide/event/ssii2022/subject/IS2-19/tables?cryptoId=)
+<a href="https://confit.atlas.jp/guide/event/ssii2022/subject/IS2-19/tables?cryptoId=" class="other"><u>軸屋敬介</u>，加藤邦人，"複雑背景下での対象領域を考慮した異常検知"，第28回画像センシングシンポジウム SSII2022，IS2-19，2022.6.9</a>
 
 ## スキル | Skills
 - <img src="https://design-goo.com/wp-content/uploads/2022/08/Python_logo_and_wordmark.svg_.png" height="26"/>
@@ -29,7 +45,7 @@ layout: home
 - <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1" height="30"/>Java
   - シューティングゲームを作成しました．
   - <img src="/assets/images/FiShooting.png" height="300"/>
-  - Androidアプリの<a href="https://github.com/Absolute-Value/ToDoCalendar"><b>TODOリスト付きカレンダー</b></a>も作成しました．
+  - Androidアプリの<a href="https://github.com/Absolute-Value/ToDoCalendar" class="other"><b>TODOリスト付きカレンダー</b></a>も作成しました．
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Unity_2021.svg/1200px-Unity_2021.svg.png" height="25">
   - VRで蕎麦運びをするゲームとデバイスを作りました．
   - <img src="/assets/images/VR.png" height="300"/>
@@ -37,7 +53,7 @@ layout: home
   - 本ページはjekyllを用いて、既存のテーマに頼らずhtmlとCSSから作成しました．
 - <img src="https://japan.xilinx.com/content/xilinx/ja/products/design-tools/embedded-software/ubuntu/_jcr_content/root/parsysFullWidth/xilinxflexibleslab/xilinxflexibleslab-parsys/xilinxcolumns_149128/childParsys-2/xilinximage.img.png/1644358907679.png" height="20"> Ubuntu
   - GPUノード用のOSです．無料なのに色々できて便利です．
-  - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04"><b>セットアップ</b></a>や修理をしています．
+  - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" class="other"><b>セットアップ</b></a>や修理をしています．
 - <img src="https://prtimes.jp/i/87890/2/origin/d87890-2-d4d26778877735a3722d-0.png" height="26">
   - GPUノードの個別の環境構築に使用しています．
   - これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの関係で非公開です．
