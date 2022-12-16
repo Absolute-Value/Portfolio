@@ -38,15 +38,15 @@ layout: home
 <a href="https://confit.atlas.jp/guide/event/ssii2022/subject/IS2-19/tables?cryptoId=" class="other"><u>軸屋敬介</u>，加藤邦人，"複雑背景下での対象領域を考慮した異常検知"，第28回画像センシングシンポジウム SSII2022，IS2-19，2022.6.9</a>
 
 ## スキル | Skills
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="20"/>Python
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="20"/> Python
   - 最も使用している言語です．<a href="https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python" class="bachelor"><b>繰り返しの作業の自動化</b></a>や<a href="https://github.com/Absolute-Value/python-GUI"  class="other"><b>GUIソフトの制作</b></a>，<a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo><b>Deep Learning</b></a>で使用しています．
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/1280px-PyTorch_logo_black.svg.png" height="18"/>
+- <img src="https://pytorch.org/assets/images/pytorch-logo.png" height="24"/>Pytorch
   - <a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo><b>Deep Learning</b></a>で使用しているライブラリです．Tensorflowと比べて柔軟な実装が可能で最新手法の公開が早いです．Tensorflowもある程度使用できます．
-- <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1" height="30"/>Java
+- <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1" height="26"/> Java
   - シューティングゲームを作成しました．
   - <img src="/assets/images/FiShooting.png" height="300"/>
   - Androidアプリの<a href="https://github.com/Absolute-Value/ToDoCalendar" class="other"><b>TODOリスト付きカレンダー</b></a>も作成しました．
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Unity_2021.svg/1200px-Unity_2021.svg.png" height="25">
+- <img src="/assets/images/unity.png" height="25"> Unity
   - VRで蕎麦運びをするゲームとデバイスを作りました．
   - <img src="/assets/images/VR.png" height="300"/>
 - htmlとCSS
