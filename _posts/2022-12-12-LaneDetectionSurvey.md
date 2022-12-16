@@ -3,7 +3,7 @@ title: "Lane Detection: A Survey with New Results"
 date: "2022-12-12 12:00:00"
 identifier: LaneDetectionSurvey
 category: "Lane Detection"
-hero: /assets/images/posts/LaneDetectionSurvey/img1.png
+hero: /assets/images/posts/LaneDetectionSurvey/img29.png
 link: https://link.springer.com/article/10.1007/s11390-020-0476-4
 tags: ["Lane Detection"]
 conference: JCST
