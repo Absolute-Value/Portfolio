@@ -38,7 +38,7 @@ layout: home
 <a href="https://confit.atlas.jp/guide/event/ssii2022/subject/IS2-19/tables?cryptoId=" class="other"><u>軸屋敬介</u>，加藤邦人，"複雑背景下での対象領域を考慮した異常検知"，第28回画像センシングシンポジウム SSII2022，IS2-19，2022.6.9</a>
 
 ## スキル | Skills
-- <img src="https://design-goo.com/wp-content/uploads/2022/08/Python_logo_and_wordmark.svg_.png" height="26"/>
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="20"/>Python
   - 最も使用している言語です．<a href="https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python" class="bachelor"><b>繰り返しの作業の自動化</b></a>や<a href="https://github.com/Absolute-Value/python-GUI"><b>GUIソフトの制作</b></a>，<a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo><b>Deep Learning</b></a>で使用しています．
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/1280px-PyTorch_logo_black.svg.png" height="18"/>
   - <a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo><b>Deep Learning</b></a>で使用しているライブラリです．Tensorflowと比べて柔軟な実装が可能で最新手法の公開が早いです．Tensorflowもある程度使用できます．
