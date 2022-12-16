@@ -14,11 +14,11 @@ layout: post
 
 # 概要
 
-- 既存の車線検出は密集線や分岐線のような複雑な場合に苦労している
-    - ![](/assets/images/posts/CondLaneNet/img1.png)
+- 既存の車線検出は密集線や分岐線のような複雑な場合に苦労している(下図)
 - 車線を検出し、次に各車線の形状を予測する車線検出フレームワークであるCondLaneNetを提案
 - 3つのベンチマークデータセットで最先端手法を凌駕
 <!--more-->
+- ![](/assets/images/posts/CondLaneNet/img1.png)
 
 # 新規性・差分
 
