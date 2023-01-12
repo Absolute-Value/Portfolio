@@ -45,7 +45,7 @@ layout: home
 - <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1" height="26"/> Java
   - シューティングゲームを作成しました．
   - <img src="/assets/images/FiShooting.png" height="300"/>
-  - Androidアプリの<a href="https://github.com/Absolute-Value/ToDoCalendar" class="other"><b>TODOリスト付きカレンダー</b></a>も作成しました．
+  - Androidアプリの<a href="https://github.com/gu-info/ToDoCalendar" class="other"><b>TODOリスト付きカレンダー</b></a>も作成しました．
 - <img src="/assets/images/unity.png" height="25"> Unity
   - VRで蕎麦運びをするゲームとデバイスを作りました．
   - <img src="/assets/images/VR.png" height="300"/>
