@@ -1,7 +1,7 @@
 ---
 title: "Jekyll ホームページ 個人的メモ"
 date: "2022-07-01 12:00:00"
-update: "2022-11-20 01:00:00"
+update: "2023-02-10 23:00:00"
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
