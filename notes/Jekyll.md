@@ -29,7 +29,7 @@ $ jekyll new <name>
 
 ローカルでサーバーを立ち上げる時  
 ```console
-$ jekyll serve
+$ jekyll server
 ```
 
 サイトをプロダクションとして生成する時  
@@ -203,6 +203,32 @@ html内の目次を追加したい箇所に
   border-radius: 3px;
 }
 ```
+
+# ダークモード
+
+ダークモードには「メディアクエリ，クラス指定，CSS変数」の3つが存在しますが，  
+本ホームページではJavaScriptを利用したクラス指定により，ダークモードを実現しています．  
+
+cssは以下のようになります．JavaScriptは[<b>コチラ</b>](https://github.com/Absolute-Value/Portfolio/blob/main/assets/js/darkmode.js)を参照
+
+```css
+.light-theme {
+  /* 通常モードで指定したい色 */
+  --theme: #fff;
+}
+
+.dark-theme {
+  /* ダークモードで指定したい色 */
+  --theme: rgb(29, 30, 32);
+}
+
+body {
+  /* varで上で指定した色を持ってくる */
+  background: var(--theme);
+}
+```
+
+他のページへ移動するとダークモードが戻ってしまうバグを修正しました（2023/02/10）
 
 ## その他の設定
 

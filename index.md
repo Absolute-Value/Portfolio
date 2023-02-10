@@ -49,8 +49,11 @@ layout: home
 - <img src="/assets/images/unity.png" height="25"> Unity
   - VRで蕎麦運びをするゲームとデバイスを作りました．
   - <img src="/assets/images/VR.png" height="300"/>
-- htmlとCSS
+- htmlとCSSとJavaScript
   - 本ページはjekyllを用いて、既存のテーマに頼らずhtmlとCSSから作成しました．
+  - 最近では，ダークモードの実装などをJavaScriptを用いて行なっています．
+  - ページの評判が良く，後輩も使うようになりました！採用実績は<a href="https://ia-gu.github.io/index" class="labo"><b>コチラ</b></a>
+    - ほとんど同じやないかーい！
 - <img src="https://japan.xilinx.com/content/xilinx/ja/products/design-tools/embedded-software/ubuntu/_jcr_content/root/parsysFullWidth/xilinxflexibleslab/xilinxflexibleslab-parsys/xilinxcolumns_149128/childParsys-2/xilinximage.img.png/1644358907679.png" height="20"> Ubuntu
   - GPUノード用のOSです．無料なのに色々できて便利です．
   - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" class="other"><b>セットアップ</b></a>や修理をしています．
