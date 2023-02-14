@@ -59,31 +59,7 @@ $ git push
 元のプロジェクトとサイト用のプロジェクトに対してgit操作するの面倒だったので自動化するbashを作成しました
 
 git.sh
-{% highlight shell linenos %}
-#!/bin/sh
-
-git add .
-if [ $# -eq 0 ]; then
-    git commit -m "Update"
-else
-    git commit -m "$1"
-fi
-git push
-cd _site
-git add .
-if [ $# -ne 0 ]; then
-    git commit -m "Update"
-else
-    git commit -m "$1"
-fi
-git push
-cd ../
-{% endhighlight %}
-
-実行
-```console
-$ bash git.sh
-```
+<script src="https://gist.github.com/Absolute-Value/96b0dfabffcde15528c82eef9135ec4b.js"></script>
 
 引数にコミットメッセージ入れれます
 
@@ -209,24 +185,11 @@ html内の目次を追加したい箇所に
 ダークモードには「メディアクエリ，クラス指定，CSS変数」の3つが存在しますが，  
 本ホームページではJavaScriptを利用したクラス指定により，ダークモードを実現しています．  
 
-cssは以下のようになります．JavaScriptは[<b>コチラ</b>](https://github.com/Absolute-Value/Portfolio/blob/main/assets/js/darkmode.js)を参照
+cssとJavaScriptは以下のようになります．
 
-```css
-.light-theme {
-  /* 通常モードで指定したい色 */
-  --theme: #fff;
-}
+<script src="https://gist.github.com/Absolute-Value/0aa3aa27c626f2af678b59cb0c42419d.js"></script>
 
-.dark-theme {
-  /* ダークモードで指定したい色 */
-  --theme: rgb(29, 30, 32);
-}
-
-body {
-  /* varで上で指定した色を持ってくる */
-  background: var(--theme);
-}
-```
+<script src="https://gist.github.com/Absolute-Value/508378fe1493c1b1df7b6c76cc3b1743.js"></script>
 
 他のページへ移動するとダークモードが戻ってしまうバグを修正しました（2023/02/10）
 

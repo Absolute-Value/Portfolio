@@ -25,22 +25,7 @@ toc: true
 偶数なら$\frac{n}{2}$，奇数なら$3n+1$を繰り返すことで，\
 最終的に$1$に収束するコラッツ数列を計算  
 
-プログラム（[3.11.1_CollatzSequence.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/03/3.11.1_CollatzSequence.py){:target="_blank"}）
-```python
-def collatz(number):
-    if number % 2 == 0:
-        return number / 2
-    else:
-        return 3 * number + 1
-
-number = int(input("整数を入力してください："))
-while(True):
-    print(number)
-    if number == 1:
-        break
-    else:
-        number = int(collatz(number))
-```
+<script src="https://gist.github.com/Absolute-Value/9dd7fdf91c7866e07e87ff3fe8fe5099.js"></script>
 
 出力
 ```console
@@ -61,28 +46,7 @@ $ python3 3.11.1_CollatzSequence.py
 ### 3.11.2 入力の妥当性検証
 コラッツ数列のプログラムの入力が整数でない場合に、整数を促すメッセージを表示
 
-プログラム（[3.11.2_InputValidity.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/03/3.11.2_InputValidity.py){:target="_blank"}）
-```python
-def collatz(number):
-    if number % 2 == 0:
-        return number / 2
-    else:
-        return 3 * number + 1
-
-while(True):
-    try:
-        number = int(input("整数を入力してください："))
-        break
-    except:
-        print("エラー：整数値を入力してください")
-
-while(True):
-    print(number)
-    if number == 1:
-        break
-    else:
-        number = int(collatz(number))
-```
+<script src="https://gist.github.com/Absolute-Value/117217311d745d3520beeea82b9cfb4c.js"></script>
 
 出力
 ```console
@@ -98,18 +62,7 @@ $ python3 3.11.2_InputValidity.py
 ### 4.10.1 コンマ付け
 リストの要素をカンマとスペースで並べ，最後の要素の前にandを挿入
 
-プログラム（[4.10.1_Comma.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/04/4.10.1_Comma.py){:target="_blank"}）
-```python
-def AddComma(given_list):
-    string = ''
-    for _ in range(len(given_list) - 1):
-        string += given_list.pop(0) + ', '
-    string += 'and ' + given_list[0]
-    return string
-
-spam = ['apples', 'bananas', 'tohu', 'cats']
-print(AddComma(spam))
-```
+<script src="https://gist.github.com/Absolute-Value/3dd91eb79875ab4c7fa82aa976e0ea1b.js"></script>
 
 出力
 ```console
@@ -120,23 +73,7 @@ apples, bananas, tohu, and cats
 ### 4.10.2 絵文字グリッド
 リストを受け取り，絵として表示
 
-プログラム（[4.10.2_CharacterPicture.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/04/4.10.2_CharacterPicture.py){:target="_blank"}）
-```python
-grid = [['.', '.', '.', '.', '.', '.'],
-        ['.', '0', '0', '.', '.', '.'],
-        ['0', '0', '0', '0', '.', '.'],
-        ['0', '0', '0', '0', '0', '.'],
-        ['.', '0', '0', '0', '0', '0'],
-        ['0', '0', '0', '0', '0', '.'],
-        ['0', '0', '0', '0', '.', '.'],
-        ['.', '0', '0', '.', '.', '.'],
-        ['.', '.', '.', '.', '.', '.']]
-
-for i in range(len(grid[0])):
-    for j in range(len(grid)):
-        print(grid[j][i], end='')
-    print('')
-```
+<script src="https://gist.github.com/Absolute-Value/5ba772a2cc1311c744cb2d1693faf32b.js"></script>
 
 出力
 ```console
@@ -148,25 +85,12 @@ $ python3 4.10.2_CharacterPicture.py
 ...000...
 ....0....
 ```
-htmlだと、0と.の文字の幅が異なるようで、残念な形になっていますね...
 
 # 5章　辞書とデータ構造
 ### 5.6.1 ファンタジーゲームの持ち物リスト
 持ち物リスト（辞書型）の表示
 
-プログラム（[5.6.1_Inventory.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/05/5.6.1_Inventory.py){:target="_blank"}）
-```python
-def display_inventory(inventory):
-    print("持ち物リスト")
-    item_total = 0
-    for k, v in inventory.items():
-        print(f'{v} {k}')
-        item_total += v
-    print("アイテム総数：" + str(item_total))
-
-stuff = {'ロープ': 1, 'たいまつ': 6, '金貨': 42, '手裏剣': 1, '矢': 12,}
-display_inventory(stuff)
-```
+<script src="https://gist.github.com/Absolute-Value/99055e31d321770f5e78853dfb72449d.js"></script>
 
 出力
 ```console
@@ -183,27 +107,7 @@ $ python3 5.6.1_Inventory.py
 ### 5.6.2 ファンタジーゲームの持ち物リスト用にリストから辞書に移す関数
 持ち物リストに獲得したアイテムを追加
 
-プログラム（[5.6.2_AddToInventory.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/05/5.6.2_AddToInventory.py){:target="_blank"}）
-```python
-def display_inventory(inventory):
-    print("持ち物リスト")
-    item_total = 0
-    for k, v in inventory.items():
-        print(f'{v} {k}')
-        item_total += v
-    print("アイテム総数：" + str(item_total))
-
-def add_to_intentory(inventory, added_items):
-    for item in added_items:
-        inventory.setdefault(item, 0)
-        inventory[item] += 1
-    return inventory
-
-inv = {'金貨': 42, 'ロープ': 1}
-dragon_loot = ['金貨', '手裏剣', '金貨', '金貨', 'ルビー']
-inv = add_to_intentory(inv, dragon_loot)
-display_inventory(inv)
-```
+<script src="https://gist.github.com/Absolute-Value/e6936cb7f0f6ef16c21e562963326889.js"></script>
 
 出力
 ```console
@@ -222,27 +126,7 @@ $ python3 5.6.2_AddToInventory.py
 ### 6.7.1 表の表示
 文字列のリストを右揃えに成形して表示
 
-プログラム（[6.7.1_ShowTable.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/06/6.7.1_ShowTable.py){:target="_blank"}）
-```python
-def print_table(table_data):
-    col_widths = [0] * len(table_data)
-    for i, datas in enumerate(table_data):
-        for data in datas:
-            length = len(data)
-            if length > col_widths[i]:
-                col_widths[i] = length
-                
-    for i in range(len(table_data[0])):
-        for j in range(len(table_data)):
-            print(table_data[j][i].rjust(col_widths[j]), end='')
-            print(' ',end='')
-        print('')
-
-table_data = [['apples', 'oranges', 'cherries', 'banana'],
-              ['Alice', 'Bob', 'Carol', 'David'],
-              ['dogs', 'cats', 'moose', 'goose']]
-print_table(table_data)
-```
+<script src="https://gist.github.com/Absolute-Value/a42283342b75f169ee67b0b60ddde4d3.js"></script>
 
 出力
 ```console

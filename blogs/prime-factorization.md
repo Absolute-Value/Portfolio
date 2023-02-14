@@ -20,25 +20,8 @@ toc: true
 # python
 まずはpythonです
 
-[PrimeFactorization.py](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.py){:target="_blank"}
-```python
-def PrimeFactorization(num):
-    factors = []
-    i = 2
-    while(i != num):
-        if num % i == 0:
-            factors.append(i)
-            num = int( num / i )
-            i = 2
-        else:
-            i += 1
-    factors.append(num)
-    return factors
+<script src="https://gist.github.com/Absolute-Value/6e204cce0c69918307c62bd73880f6f6.js"></script>
 
-num = int(input("素因数分解したい整数を入力してください："))
-factors_result = PrimeFactorization(num)
-print(factors_result)
-```
 
 実行
 ```console
@@ -52,40 +35,7 @@ $ python3 PrimeFactorization.py
 # java
 続いて、同じ内容をjavaでやってみました
 
-[PrimeFactorization.java](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.java){:target="_blank"}
-```java
-import java.util.Scanner;
-import java.util.ArrayList;
-
-class PrimeFactorization{
-  public static void main(String args[]) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("素因数分解したい整数を入力してください：");
-
-    int input = scanner.nextInt();
-
-    System.out.println(calc(input));
-    scanner.close();
-  }
-
-  private static ArrayList<Integer> calc(int num) {
-    ArrayList<Integer> factors = new ArrayList<>();
-    int i = 2;
-    
-    while (i != num) {
-      if (num % i == 0) {
-        factors.add(i);
-        num /= i;
-        i = 2;
-      } else {
-        i += 1;
-      }
-    }
-    factors.add(num);
-    return factors;
-  }
-}
-```
+<script src="https://gist.github.com/Absolute-Value/cb20aed233bdf6903fcb48b094e928f3.js"></script>
 
 出力
 ```console
@@ -100,38 +50,7 @@ $ java PrimeFactorization
 # C
 c言語でもやってみました
 
-[PrimeFactorization.c](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.c){:target="_blank"}
-```c
-#include <stdio.h>
-
-void PrimeFactorization(num)
-{
-  int i = 2;
-  printf("[");
-  while (i != num)
-  {
-    if (num % i == 0)
-    {
-      printf("%d, ", i);
-      num /= i;
-      i = 2;
-    }
-    else
-    {
-      i++;
-    }
-  }
-  printf("%d]\n", num);
-}
-
-int main()
-{
-  int num;
-  printf("素因数分解したい整数を入力してください：");
-  scanf("%d", &num);
-  PrimeFactorization(num);
-}
-```
+<script src="https://gist.github.com/Absolute-Value/95b83107e869fd4f16a68f62535ddf4f.js"></script>
 
 実行
 ```console

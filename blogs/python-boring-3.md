@@ -27,49 +27,7 @@ toc: true
 過去のバージョンを残すために連番が付くようにする  
 引数 "\<folder\>"： フォルダを指定
 
-プログラム（[9.4_BackupToZip.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.4_BackupToZip.py){:target="_blank"}）
-```python
-import zipfile, os, sys
-
-# クリップボードの内容を保存
-if len(sys.argv) != 2:
-    print("ZIPにしたいフォルダを入力してください")
-
-def backup_to_zip(folder):
-    #folder = os.path.abspath(folder) # folderを絶対パスに
-
-    # 既存のファイル名からファイル名の連番を決める
-    number = 1
-    while True:
-        zip_filename = os.path.basename(folder) + '_' + str(number) + '.zip'
-        if not os.path.exists(zip_filename):
-            break
-        number += 1
-
-    # ZIPファイルを作成する
-    print(f'Creating {zip_filename}...')
-    backup_zip = zipfile.ZipFile(zip_filename, 'w')
-
-    # フォルダのツリーを渡り歩いてその中のファイルを圧縮する
-    for foldername, subfolders, filenames in os.walk(folder):
-        foldername2 = foldername.replace('..','.')
-
-        print(f'Adding files in {foldername2}')
-        # 現在のフォルダをZIPファイルに追加する
-        #backup_zip.write(foldername)
-        # 現在のフォルダの中の全ファイルをZIPファイルに追加する
-        for filename in filenames:
-            new_base = os.path.basename(folder) + '_'
-            print(new_base)
-            if filename.startswith(new_base) and filename.endswith('.zip'):
-                continue
-            backup_zip.write(os.path.join(foldername, filename), os.path.join(foldername2,filename))
-
-    backup_zip.close()
-    print("Done.")
-
-backup_to_zip(sys.argv[1])
-```
+<script src="https://gist.github.com/Absolute-Value/77ddd3fa68dae534ed47cb529e9fa141.js"></script>
 
 出力
 ```console
@@ -92,35 +50,7 @@ Done.
 ディレクトリツリーを渡り歩いて、.pdfや.jpgなどの特定の拡張子のファイルを見つけて、新しいフォルダにコピーする  
 引数 "\<folder\> \<extention\>"： コピーするフォルダと拡張子
 
-プログラム（[9.7.1_SelectCopy.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.1_SelectCopy.py){:target="_blank"}）
-```python
-import shutil, os, sys
-
-# クリップボードの内容を保存
-if len(sys.argv) != 3:
-    print("コピーにしたいフォルダと拡張子を入力してください")
-
-def select_copy(folder, extention):
-    #folder = os.path.abspath(folder) # folderを絶対パスに
-
-    # フォルダのツリーを渡り歩いてその中のファイルを圧縮する
-    for foldername, subfolders, filenames in os.walk(folder):
-        new_foldername = foldername.replace('..','.')
-
-        # 現在のフォルダの中の全ファイルをZIPファイルに追加する
-        for filename in filenames:
-            if str(extention) in filename:
-                os.makedirs(new_foldername, exist_ok=True)
-                print(f'Making folder: {new_foldername}')
-
-                newfile_path = os.path.join(new_foldername,filename)
-                shutil.copy(os.path.join(foldername, filename), newfile_path)
-                print(f'Copy file: {newfile_path}')
-
-    print("Done.")
-
-select_copy(sys.argv[1], sys.argv[2])
-```
+<script src="https://gist.github.com/Absolute-Value/7f151f31edd9a4333becb9d19c304960.js"></script>
 
 出力
 ```console
@@ -143,44 +73,7 @@ Done.
 引数 "\<folder\> \<size\>"： サイズも指定  
 引数 "\<folder\> \<size\> \<unit\>"： 単位も指定(B,KB,MB,GB)
 
-プログラム（[9.7.2_SearchLargeFile.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.2_SearchLargeFile.py){:target="_blank"}）
-```python
-import os, sys
-
-# クリップボードの内容を保存
-
-def search_file(folder, size=100, unit='KB'):
-    folder = os.path.abspath(folder) # folderを絶対パスに
-
-    # フォルダのツリーを渡り歩いてその中のファイルを圧縮する
-    for foldername, subfolders, filenames in os.walk(folder):
-
-        # 現在のフォルダの中の全ファイルをZIPファイルに追加する
-        for filename in filenames:
-            file_path = (os.path.join(foldername, filename))
-            
-            file_size = os.path.getsize(file_path)
-            if unit == 'KB':
-                file_size = file_size / 1000
-            elif unit == 'MB':
-                file_size = file_size / 1000 / 1000
-            elif unit == 'GB':
-                file_size == file_size / 1000 / 1000 / 1000
-
-            if  file_size > int(size):
-                print(f'{file_path} : {file_size:.2f} {unit}')
-
-    print("Done.")
-
-if len(sys.argv) < 2:
-    print("サイズの大きいファイルを探したいフォルダを入力してください")
-elif len(sys.argv) == 2:
-    search_file(sys.argv[1])
-elif len(sys.argv) == 3:
-    search_file(sys.argv[1], sys.argv[2])
-else:
-    search_file(sys.argv[1], sys.argv[2], sys.argv[3])
-```
+<script src="https://gist.github.com/Absolute-Value/23e9cc3bdc06517041098122ebded014.js"></script>
 
 [08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08){:target="_blank"}の中で、1KBを超えているファイルを探します
 
@@ -197,22 +90,7 @@ Done.
 ### 9.7.3 飛びつき連番の作成
 9.7.3.1の準備用に番号の飛んだ連番を作成する
 
-プログラム（[9.7.3_Prepare.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3_Prepare.py){:target="_blank"}）
-```python
-import os
-
-def prepare_serial_number(folder='Files', head='spam'):
-    os.makedirs(folder, exist_ok=True)
-
-    for i in range(1, 23+1):
-        if i == 4 or i == 10 or i==11:
-            continue
-        print(head + str(i).zfill(3) + '.txt')
-        with open(os.path.join(folder, head + str(i).zfill(3) + '.txt'), 'a') as f:
-            f.write(str(i))
-
-prepare_serial_number()
-```
+<script src="https://gist.github.com/Absolute-Value/475e83ba78629e4c61149dee763fa1f0.js"></script>
 
 出力
 ```console
@@ -238,48 +116,13 @@ spam021.txt
 spam022.txt
 spam023.txt
 ```
+
 4, 10, 11が飛ばされたファイルを作成することができました
 
 ### 9.7.3.1 連番の飛びを埋める
 指定した接頭語を持つ連番ファイルを探し出し、連番が飛んでいる箇所を見つけ、後に続くファイルの名前を変更する
 
-プログラム（[9.7.3.1_FillSerialNumber.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3.1_FillSerialNumber.py){:target="_blank"}）
-```python
-import sys, os
-
-def fill_searial_number(folder='Files', head='spam'):
-    if not os.path.exists(folder):
-        print('フォルダーが存在しません')
-
-    while(True):
-        count = 0
-        num = 1
-        filenames = sorted(os.listdir(folder))
-        for filename in filenames:
-            if os.path.isdir(filename):
-                continue
-            
-            if not str(num) in filename:
-                num_length = len(os.path.splitext(filename.lstrip(head))[0])
-                before_filepath = os.path.join(folder, filename)
-                after_filename = head + str(num).zfill(num_length) + os.path.splitext(filename)[1]
-                after_filepath = os.path.join(folder, after_filename)
-                print(before_filepath, after_filepath)
-                os.rename(before_filepath, after_filepath)
-                count += 1
-            else:
-                filename = filename.lstrip(head)
-            num += 1
-        if count == 0:
-            break
-
-if len(sys.argv) < 2:
-    fill_searial_number()
-elif len(sys.argv) == 2:
-    fill_searial_number(sys.argv[1])
-else:
-    fill_searial_number(sys.argv[1], sys.argv[2])
-```
+<script src="https://gist.github.com/Absolute-Value/08aea4f0120affcc2bf354d523689e75.js"></script>
 
 出力
 ```console
@@ -308,29 +151,7 @@ Files/spam023.txt Files/spam020.txt
 ### 9.7.3.2 連番の隙間を開ける(9.7.3.1の逆)
 連番ファイルの間に隙間を開けて、他の連番ファイルを入れられるようにする
 
-プログラム（[9.7.3.2_ExpandSerialNumber.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3.2_ExpandSerialNumber.py){:target="_blank"}）
-```python
-import sys, os
-
-def expand_serial_number(expand_num=3, folder='Files', head='spam'):
-    filenames = sorted(os.listdir(folder), reverse=True)
-    if len(filenames) < expand_num:
-        sys.exit()
-    for filename in filenames:
-        before_filepath = os.path.join(folder, filename)
-        num = os.path.splitext(filename.lstrip(head))[0]
-        after_filename = head + str(int(num)+1).zfill(len(num)) + os.path.splitext(filename)[1]
-        after_filepath = os.path.join(folder, after_filename)
-        print(before_filepath, after_filepath)
-        os.rename(before_filepath, after_filepath)
-        if int(num) == expand_num:
-            break
-
-if len(sys.argv) < 2:
-    expand_serial_number()
-else:
-    expand_serial_number(int(sys.argv[1]))
-```
+<script src="https://gist.github.com/Absolute-Value/966b63d98e685ed6c17d5e1069676efd.js"></script>
 
 出力
 ```console
