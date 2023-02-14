@@ -64,4 +64,4 @@ $ gem install jekyll
 [Jekyll ホームページ 個人的メモ]({{ 'notes/Jekyll' | relative_url }})
 
 # その他設定
-[Markdownで数式を使用する方法](https://qiita.com/memakura/items/e4d2de379f98ad7be498)
+[Markdownで数式を使用する方法](https://qiita.com/memakura/items/e4d2de379f98ad7be498){:target="_blank"}

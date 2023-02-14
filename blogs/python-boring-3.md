@@ -13,7 +13,7 @@ toc: true
 
 # はじめに
 
-書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続き（9章）です．
+書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/){:target="_blank"}」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff){:target="_blank"}』）のpythonプログラムの実装の続き（9章）です．
 
 これまで：  
 [退屈なことはPythonにやらせよう①]({{ 'blogs/python-boring-1' | relative_url }})  
@@ -27,7 +27,7 @@ toc: true
 過去のバージョンを残すために連番が付くようにする  
 引数 "\<folder\>"： フォルダを指定
 
-プログラム（[9.4_BackupToZip.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.4_BackupToZip.py)）
+プログラム（[9.4_BackupToZip.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.4_BackupToZip.py){:target="_blank"}）
 ```python
 import zipfile, os, sys
 
@@ -85,14 +85,14 @@ Origin.txt
 Generated.txt
 Done.
 ```
-[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08)の中身を丸ごと、zipファイルにすることができました
+[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08){:target="_blank"}の中身を丸ごと、zipファイルにすることができました
 
 ## 9.7 演習
 ### 9.7.1　選択コピー
 ディレクトリツリーを渡り歩いて、.pdfや.jpgなどの特定の拡張子のファイルを見つけて、新しいフォルダにコピーする  
 引数 "\<folder\> \<extention\>"： コピーするフォルダと拡張子
 
-プログラム（[9.7.1_SelectCopy.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.1_SelectCopy.py)）
+プログラム（[9.7.1_SelectCopy.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.1_SelectCopy.py){:target="_blank"}）
 ```python
 import shutil, os, sys
 
@@ -135,7 +135,7 @@ Making folder: ./08
 Copy file: ./08/8.10.2_CompositionGenerator.py
 Done.
 ```
-[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08)の中の .py ファイルをコピーすることができました
+[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08){:target="_blank"}の中の .py ファイルをコピーすることができました
 
 ### 9.7.2 巨大なフォイルを探す
 ディレクトリツリーを渡り歩いて、サイズの大きなサイズのフォルダを探し出す  
@@ -143,7 +143,7 @@ Done.
 引数 "\<folder\> \<size\>"： サイズも指定  
 引数 "\<folder\> \<size\> \<unit\>"： 単位も指定(B,KB,MB,GB)
 
-プログラム（[9.7.2_SearchLargeFile.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.2_SearchLargeFile.py)）
+プログラム（[9.7.2_SearchLargeFile.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.2_SearchLargeFile.py){:target="_blank"}）
 ```python
 import os, sys
 
@@ -182,7 +182,7 @@ else:
     search_file(sys.argv[1], sys.argv[2], sys.argv[3])
 ```
 
-[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08)の中で、1KBを超えているファイルを探します
+[08](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08){:target="_blank"}の中で、1KBを超えているファイルを探します
 
 ```console
 $ python3 9.7.2_SearchLargeFile.py ../08 1 KB
@@ -197,7 +197,7 @@ Done.
 ### 9.7.3 飛びつき連番の作成
 9.7.3.1の準備用に番号の飛んだ連番を作成する
 
-プログラム（[9.7.3_Prepare.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3_Prepare.py)）
+プログラム（[9.7.3_Prepare.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3_Prepare.py){:target="_blank"}）
 ```python
 import os
 
@@ -243,7 +243,7 @@ spam023.txt
 ### 9.7.3.1 連番の飛びを埋める
 指定した接頭語を持つ連番ファイルを探し出し、連番が飛んでいる箇所を見つけ、後に続くファイルの名前を変更する
 
-プログラム（[9.7.3.1_FillSerialNumber.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3.1_FillSerialNumber.py)）
+プログラム（[9.7.3.1_FillSerialNumber.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3.1_FillSerialNumber.py){:target="_blank"}）
 ```python
 import sys, os
 
@@ -308,7 +308,7 @@ Files/spam023.txt Files/spam020.txt
 ### 9.7.3.2 連番の隙間を開ける(9.7.3.1の逆)
 連番ファイルの間に隙間を開けて、他の連番ファイルを入れられるようにする
 
-プログラム（[9.7.3.2_ExpandSerialNumber.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3.2_ExpandSerialNumber.py)）
+プログラム（[9.7.3.2_ExpandSerialNumber.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/09/9.7.3.2_ExpandSerialNumber.py){:target="_blank"}）
 ```python
 import sys, os
 

@@ -20,7 +20,7 @@ toc: true
 # python
 まずはpythonです
 
-[PrimeFactorization.py](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.py)
+[PrimeFactorization.py](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.py){:target="_blank"}
 ```python
 def PrimeFactorization(num):
     factors = []
@@ -52,7 +52,7 @@ $ python3 PrimeFactorization.py
 # java
 続いて、同じ内容をjavaでやってみました
 
-[PrimeFactorization.java](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.java)
+[PrimeFactorization.java](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.java){:target="_blank"}
 ```java
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -100,7 +100,7 @@ $ java PrimeFactorization
 # C
 c言語でもやってみました
 
-[PrimeFactorization.c](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.c)
+[PrimeFactorization.c](https://github.com/Absolute-Value/PrimeFactorization/blob/main/PrimeFactorization.c){:target="_blank"}
 ```c
 #include <stdio.h>
 

@@ -13,18 +13,18 @@ toc: true
 ### <span style="color: red; ">現在はHugoを使用していません　</span>
 
 以前Githubのpagesデフォルトで作ったホームページが寂しく，ポストのページの見栄えが悪かったので、  
-[コチラ](https://zenn.dev/okaponta/articles/c302f58507febc) を参考にHugoを使ったホームページに作り直しました。  
+[コチラ](https://zenn.dev/okaponta/articles/c302f58507febc){:target="_blank"}を参考にHugoを使ったホームページに作り直しました。  
 <!--more-->
 
 ## Hugoテーマ
 
 Hugoにはデザインのテンプレートがあるので色々と吟味した結果、
-[コチラ](https://hugo-toha.github.io/)のような見た目になる
-[hugo-toha](https://github.com/hugo-toha/hugo-toha.github.io)を選択しました
+[コチラ](https://hugo-toha.github.io/){:target="_blank"}のような見た目になる
+[hugo-toha](https://github.com/hugo-toha/hugo-toha.github.io){:target="_blank"}を選択しました
 
 ## 使用方法
 
-使用方法の[リンク](https://toha-guides.netlify.app/posts/getting-started/  )を今後の自分のためにも貼っておきます。  
+使用方法の[リンク](https://toha-guides.netlify.app/posts/getting-started/){:target="_blank"}を今後の自分のためにも貼っておきます。  
 
 この通りにやれば誰でもできると思います。（多少の英語力が要りますが）
 
@@ -34,7 +34,7 @@ Hugoにはデザインのテンプレートがあるので色々と吟味した�
 hugo server -t toha -w
 ```
 を入力することで
-[http://localhost:1313/](http://localhost:1313/)
+[http://localhost:1313/](http://localhost:1313/){:target="_blank"}
 にてアクセスできる
 
 ### 一連のGit操作

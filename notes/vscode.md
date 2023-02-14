@@ -58,4 +58,4 @@ VSCodeのコマンドメモ
 | Ctrl+Shift+D | デバッグのサイドバーの表示 |
 
 # その他
-[【Windows版】VS Code キーボードショートカット一覧 （オススメ付き）](https://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b)
+[【Windows版】VS Code キーボードショートカット一覧 （オススメ付き）](https://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b){:target="_blank"}

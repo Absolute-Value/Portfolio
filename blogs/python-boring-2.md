@@ -13,7 +13,7 @@ toc: true
 
 # はじめに
 
-書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続き（7・8章）です．
+書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/){:target="_blank"}」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff){:target="_blank"}』）のpythonプログラムの実装の続き（7・8章）です．
 
 これまで：  
 [退屈なことはPythonにやらせよう①]({{ 'blogs/python-boring-1' | relative_url }})
@@ -25,7 +25,7 @@ toc: true
 正規表現を用いて，パスワードの強さを判定  
 強いパスワード（８文字以上，大文字と小文字を含む，１つ以上の数字を含む）
 
-プログラム（[7.18.1_PasswordDetection.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/07/7.18.1_PasswordDetection.py)）
+プログラム（[7.18.1_PasswordDetection.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/07/7.18.1_PasswordDetection.py){:target="_blank"}）
 ```python
 import re
 
@@ -70,7 +70,7 @@ $ python3 7.18.1_PasswordDetection.py
 文字列メソッドのstrip()と同等の動きをする関数を定義  
 文字列の先頭と末尾から指定した文字を除去（デフォルトは空白文字）
 
-プログラム（[7.18.2_StripMethod.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/07/7.18.2_StripMethod.py)）
+プログラム（[7.18.2_StripMethod.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/07/7.18.2_StripMethod.py){:target="_blank"}）
 ```python
 import re
 
@@ -99,7 +99,7 @@ Text
 ## 8.7 マルチクリップボード
 クリップボードのテキストを保存・読込を行うプログラム
 
-プログラム（[8.7_MultiClipBoard.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.7_MultiClipBoard.py)）
+プログラム（[8.7_MultiClipBoard.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.7_MultiClipBoard.py){:target="_blank"}）
 ```python
 import shelve, pyperclip, sys
 
@@ -151,7 +151,7 @@ $ python3 8.7_MultiClipBoard.py list
 ### 8.10.1 マルチクリップボードを拡張
 マルチクリップボードのプログラムを引数 "delete \<keyword\>"でシェルフからキーワードを削除できるように
 
-プログラム（[8.10.1_MultiClipBoard.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.10.1_MultiClipBoard.py)）
+プログラム（[8.10.1_MultiClipBoard.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.10.1_MultiClipBoard.py){:target="_blank"}）
 ```python
 import shelve, pyperclip, sys
 
@@ -196,7 +196,7 @@ $ python3 8.10.1_MultiClipBoard.py list
 テキストファイルを読み込み，ADJECTIVE(形容詞),NOUN(名詞),ADVERB(副詞),VERB(動詞)を書き換える作文ジェネレータ
 
 
-プログラム（[8.10.2_CompositionGenerator.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.10.2_CompositionGenerator.py)）
+プログラム（[8.10.2_CompositionGenerator.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.10.2_CompositionGenerator.py){:target="_blank"}）
 ```python
 import re
 
@@ -244,7 +244,7 @@ The silly panda walked to the chandelier and then screamed. A nearby pickup truc
 指定したフォルダ内のtxtファイルを開いて，入力した正規表現にマッチする箇所を探索する  
 引数 "\<path\>"：探索するフォルダ
 
-プログラム（[8.10.3_RegexSearcher.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.10.3_RegexSearcher.py)）
+プログラム（[8.10.3_RegexSearcher.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/08/8.10.3_RegexSearcher.py){:target="_blank"}）
 ```python
 import re, sys, os
 
@@ -279,7 +279,7 @@ Generated.txt
 The silly panda walked to the chandelier and then screamed. A nearby pickup truck was una"ff"ected by these events.
 kei@kenoMacBook-Pro 08 % 
 ```
-[Composition](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08/Composition)フォルダ内のtxtファイルの中で、  
+[Composition](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/tree/main/08/Composition){:target="_blank"}フォルダ内のtxtファイルの中で、  
 fが二回続く箇所を探索し、見つけることができている。
 
 # つづき

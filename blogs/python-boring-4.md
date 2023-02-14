@@ -13,7 +13,7 @@ toc: true
 
 # はじめに
 
-書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムの実装の続き（10・11章）です．
+書籍 「[退屈なことはPythonにやらせよう Automate the boring stuff with python](https://www.oreilly.co.jp/books/9784873117782/){:target="_blank"}」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff){:target="_blank"}』）のpythonプログラムの実装の続き（10・11章）です．
 
 これまで：  
 [退屈なことはPythonにやらせよう①]({{ 'blogs/python-boring-1' | relative_url }})  
@@ -27,7 +27,7 @@ toc: true
 ### 10.5.7 ブレークポイント
 1000回のコイン投げをシミュレーション
 
-プログラム（[10.5.7_coinFlip.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/10/10.5.7_coinFlip.py)）
+プログラム（[10.5.7_coinFlip.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/10/10.5.7_coinFlip.py){:target="_blank"}）
 ```python
 import random
 
@@ -51,7 +51,7 @@ $ python3 10.5.7_coinFlip.py
 ### 10.8.1 コイン投げゲームをデバッグする
 コインを投げて裏と表を当てるゲームにバグがあるため、バグを見つける   
 
-オリジナルのバグありプログラム（[10.8.1_CoinGame.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/10/10.8.1_CoinGame.py)）
+オリジナルのバグありプログラム（[10.8.1_CoinGame.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/10/10.8.1_CoinGame.py){:target="_blank"}）
 ```python
 import random
 
@@ -87,7 +87,7 @@ $ python3 10.8.1_CoinGame.py
 入力は表か裏ですが、答えは0か1であるため当たるわけがないですね  
 そこで、裏と表を0と1に変換する関数を追加しました
 
-バグを修正したプログラム（[10.8.1_CoinGameDebug.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/10/10.8.1_CoinGameDebug.py)）
+バグを修正したプログラム（[10.8.1_CoinGameDebug.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/10/10.8.1_CoinGameDebug.py){:target="_blank"}）
 ```python
 import random
 
@@ -133,7 +133,7 @@ $ python3 10.8.1_CoinGameDebug.py
 ## 11.1 webbrowserモジュールを用いたmapIt.py
 コマンドラインやクリップボードに指定した住所の地図を開く
 
-プログラム（[11.1_mapIt.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.1_mapIt.py)）
+プログラム（[11.1_mapIt.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.1_mapIt.py){:target="_blank"}）
 ```python
 import webbrowser, sys, pyperclip
 
@@ -159,7 +159,7 @@ Googleマップで開くことができました
 コマンドラインからGoogle検索をし、上位の検索結果をタブに開く  
 引数 "\<keyword\>"：検索したいワード
 
-プログラム（[11.5_lucky.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.5_lucky.py)）
+プログラム（[11.5_lucky.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.5_lucky.py){:target="_blank"}）
 ```python
 import requests, sys, webbrowser, bs4
 
@@ -189,7 +189,7 @@ Googling...
 ## 11.6 XKCDコミックをダウンロードする
 XKCDコミックをひとつずつダウンロードする
 
-プログラム（[11.6_DownloadXkcd.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.6_DownloadXkcd.py)）
+プログラム（[11.6_DownloadXkcd.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.6_DownloadXkcd.py){:target="_blank"}）
 ```python
 import requests, os, bs4
 import time
@@ -265,7 +265,7 @@ $ python3 11.6_DownloadXkcd.py
 コマンドラインから電子メールアドレスと本文テキストを受け取り、電子メールを送信する  
 引数 "\<address\> \<text\>"：アドレスとテキスト
 
-プログラム（[11.10.1_CommandLineMailer.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.1_CommandLineMailer.py)）
+プログラム（[11.10.1_CommandLineMailer.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.1_CommandLineMailer.py){:target="_blank"}）
 ```python
 import time
 import sys
@@ -325,7 +325,7 @@ $ python3 11.10.1_CommandLineMailer.py bk5h6t5109@sute.jp test mail
 写真共有サイトFlickeで画像を検索し、検索結果の画像をすべてダウンロード  
 引数 "\<keyword\>"：検索したいワード
 
-プログラム（[11.10.2_Downloader.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.2_Downloader.py)）
+プログラム（[11.10.2_Downloader.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.2_Downloader.py){:target="_blank"}）
 ```python
 import os
 import requests, sys, bs4, re
@@ -395,7 +395,7 @@ $ python3 11.10.2_Downloader.py Japan
 ### 11.10.3 2048
 2048というゲームを自動的に上右下左を繰り返し入力して遊ぶ
 
-プログラム（[11.10.3_2048.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.3_2048.py)）
+プログラム（[11.10.3_2048.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.3_2048.py){:target="_blank"}）
 ```python
 import time
 from selenium import webdriver
@@ -427,7 +427,7 @@ browser.quit()
 ### 11.10.4 リンクの検査
 指定したURLのページからリンクされたすべてのページをダウンロードする
 
-プログラム（[11.10.4_LinkSearch.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.4_LinkSearch.py)）
+プログラム（[11.10.4_LinkSearch.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/11/11.10.4_LinkSearch.py){:target="_blank"}）
 ```python
 import requests, bs4, sys, os
 

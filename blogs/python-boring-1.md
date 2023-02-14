@@ -13,7 +13,7 @@ toc: true
 
 # はじめに
 
-書籍 「[退屈なことはPythonにやらせよう](https://www.oreilly.co.jp/books/9784873117782/)」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff)』）のpythonプログラムを実装していきます．
+書籍 「[退屈なことはPythonにやらせよう](https://www.oreilly.co.jp/books/9784873117782/){:target="_blank"}」（原書名『[Automate the Boring Stuff with Python](https://www.nostarch.com/automatestuff){:target="_blank"}』）のpythonプログラムを実装していきます．
 
 <!--more-->
 
@@ -25,7 +25,7 @@ toc: true
 偶数なら$\frac{n}{2}$，奇数なら$3n+1$を繰り返すことで，\
 最終的に$1$に収束するコラッツ数列を計算  
 
-プログラム（[3.11.1_CollatzSequence.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/03/3.11.1_CollatzSequence.py)）
+プログラム（[3.11.1_CollatzSequence.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/03/3.11.1_CollatzSequence.py){:target="_blank"}）
 ```python
 def collatz(number):
     if number % 2 == 0:
@@ -61,7 +61,7 @@ $ python3 3.11.1_CollatzSequence.py
 ### 3.11.2 入力の妥当性検証
 コラッツ数列のプログラムの入力が整数でない場合に、整数を促すメッセージを表示
 
-プログラム（[3.11.2_InputValidity.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/03/3.11.2_InputValidity.py)）
+プログラム（[3.11.2_InputValidity.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/03/3.11.2_InputValidity.py){:target="_blank"}）
 ```python
 def collatz(number):
     if number % 2 == 0:
@@ -98,7 +98,7 @@ $ python3 3.11.2_InputValidity.py
 ### 4.10.1 コンマ付け
 リストの要素をカンマとスペースで並べ，最後の要素の前にandを挿入
 
-プログラム（[4.10.1_Comma.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/04/4.10.1_Comma.py)）
+プログラム（[4.10.1_Comma.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/04/4.10.1_Comma.py){:target="_blank"}）
 ```python
 def AddComma(given_list):
     string = ''
@@ -120,7 +120,7 @@ apples, bananas, tohu, and cats
 ### 4.10.2 絵文字グリッド
 リストを受け取り，絵として表示
 
-プログラム（[4.10.2_CharacterPicture.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/04/4.10.2_CharacterPicture.py)）
+プログラム（[4.10.2_CharacterPicture.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/04/4.10.2_CharacterPicture.py){:target="_blank"}）
 ```python
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', '0', '0', '.', '.', '.'],
@@ -154,7 +154,7 @@ htmlだと、0と.の文字の幅が異なるようで、残念な形になっ�
 ### 5.6.1 ファンタジーゲームの持ち物リスト
 持ち物リスト（辞書型）の表示
 
-プログラム（[5.6.1_Inventory.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/05/5.6.1_Inventory.py)）
+プログラム（[5.6.1_Inventory.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/05/5.6.1_Inventory.py){:target="_blank"}）
 ```python
 def display_inventory(inventory):
     print("持ち物リスト")
@@ -183,7 +183,7 @@ $ python3 5.6.1_Inventory.py
 ### 5.6.2 ファンタジーゲームの持ち物リスト用にリストから辞書に移す関数
 持ち物リストに獲得したアイテムを追加
 
-プログラム（[5.6.2_AddToInventory.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/05/5.6.2_AddToInventory.py)）
+プログラム（[5.6.2_AddToInventory.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/05/5.6.2_AddToInventory.py){:target="_blank"}）
 ```python
 def display_inventory(inventory):
     print("持ち物リスト")
@@ -222,7 +222,7 @@ $ python3 5.6.2_AddToInventory.py
 ### 6.7.1 表の表示
 文字列のリストを右揃えに成形して表示
 
-プログラム（[6.7.1_ShowTable.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/06/6.7.1_ShowTable.py)）
+プログラム（[6.7.1_ShowTable.py](https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python/blob/main/06/6.7.1_ShowTable.py){:target="_blank"}）
 ```python
 def print_table(table_data):
     col_widths = [0] * len(table_data)

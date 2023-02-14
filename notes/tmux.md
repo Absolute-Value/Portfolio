@@ -113,6 +113,6 @@ setw -g window-status-current-format '#[bg=colour208]#{?client_prefix,#[bg=colou
 ```
 
 # 参考になるURL
-- [tmuxチートシート](https://qiita.com/nmrmsys/items/03f97f5eabec18a3a18b)
-- [.tmux.confの設定](https://qiita.com/youichiro/items/dd54c38c2f3873348c78)
-- [tmux の status line の設定方法](https://qiita.com/nojima/items/9bc576c922da3604a72b)
+- [tmuxチートシート](https://qiita.com/nmrmsys/items/03f97f5eabec18a3a18b){:target="_blank"}
+- [.tmux.confの設定](https://qiita.com/youichiro/items/dd54c38c2f3873348c78){:target="_blank"}
+- [tmux の status line の設定方法](https://qiita.com/nojima/items/9bc576c922da3604a72b){:target="_blank"}
