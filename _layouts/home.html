@@ -22,7 +22,13 @@ layout: header
         </div>
       </div>
     </div>
+
     {{content}}
+
+    <h1>Recent GitHub Repositories</h1>
+    <div id="repoList" class="myposts"></div>
+    <script src="/assets/js/github_repositories.js"></script>
+
     <h1>Recent Posts</h1>
     <div class="myposts">
       {% assign count = 0 %}
