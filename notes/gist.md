@@ -2,11 +2,11 @@
 title: "Github Gistでのコード表示"
 date: "2023-02-14 21:00:00"
 update: "2023-02-14 21:00:00"
-category: "Blog"
+category: "Note"
 hero: /assets/images/note.jpg
 tags: ["Github", "Gist"]
 math: true
-layout: blog
+layout: note
 excerpt: 「GitHub Gist」を使ってコードを載せてみた所、綺麗に表示することができたのでご紹介します．
 toc: true
 ---

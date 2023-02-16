@@ -59,4 +59,4 @@ layout: home
   - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" class="other" target="_blank"><b>セットアップ</b></a>や修理をしています．
 - <img src="https://prtimes.jp/i/87890/2/origin/d87890-2-d4d26778877735a3722d-0.png" height="26">
   - GPUノードの個別の環境構築に使用しています．
-  - これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの関係で非公開です．
+  - これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの都合上，非公開です．
