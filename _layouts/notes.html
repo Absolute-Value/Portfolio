@@ -24,8 +24,17 @@ layout: default
                 </p>
                 <p>{{ note.excerpt }}</p>
                 <p>
-                  <span class="fa fa-calendar"></span> {% if note.update == note.date %}{{ note.date | date: "%b %-d, %Y" }}{% else %}{{ note.update | date: "%b %-d, %Y" }}<span style="color: blue; "> (Updated)</span>{% endif %}
-                  <span class="fa fa-flag"></span> {% for tag in note.tags %}{{tag}}, {% endfor %}
+                  <span class="fa fa-calendar"></span> 
+                  {% if note.update == note.date %}
+                    {{ note.date | date: "%b %-d, %Y" }}
+                  {% else %}
+                    {{ note.update | date: "%b %-d, %Y" }}
+                    <span style="color: #4980ff; "> (Updated)</span>
+                  {% endif %}
+                  <span class="fa fa-flag"></span> 
+                  {% for tag in note.tags %}
+                    {{tag}}, 
+                  {% endfor %}
                 </p>
               </div>
             </a>

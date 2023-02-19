@@ -78,8 +78,17 @@ layout: header
                   </p>
                   <p>{{ note.excerpt }}</p>
                   <p>
-                    <span class="fa fa-calendar"></span> {% if note.update == note.date %}{{ note.date | date: "%b %-d, %Y" }}{% else %}{{ note.update | date: "%b %-d, %Y" }}<span style="color: blue; "> (Updated)</span>{% endif %}
-                    <span class="fa fa-flag"></span> {% for tag in note.tags %}{{tag}}, {% endfor %}
+                    <span class="fa fa-calendar"></span> 
+                    {% if note.update == note.date %}
+                      {{ note.date | date: "%b %-d, %Y" }}
+                    {% else %}
+                      {{ note.update | date: "%b %-d, %Y" }}
+                      <span style="color: #4980ff; "> (Updated)</span>
+                    {% endif %}
+                    <span class="fa fa-flag"></span> 
+                    {% for tag in note.tags %}
+                      {{tag}}, 
+                    {% endfor %}
                   </p>
                 </div>
               </a>
@@ -98,7 +107,7 @@ layout: header
     <h1>Recent Blogs</h1>
     <div class="myposts">
       {% assign count = 0 %}
-      {% assign pages = site.pages | sort: "date" | reverse %}
+      {% assign pages = site.pages | sort: "update" | reverse %}
       {% for note in pages %}
         {% if note.category == 'Blog' %}
           {% if count < 3 %}
@@ -111,8 +120,17 @@ layout: header
                   </p>
                   <p>{{ note.excerpt }}</p>
                   <p>
-                    <span class="fa fa-calendar"></span> {{ note.date | date: "%b %-d, %Y" }}
-                    <span class="fa fa-flag"></span> {% for tag in note.tags %}{{tag}}, {% endfor %}
+                    <span class="fa fa-calendar"></span> 
+                    {% if note.update == note.date %}
+                      {{ note.date | date: "%b %-d, %Y" }}
+                    {% else %}
+                      {{ note.update | date: "%b %-d, %Y" }}
+                      <span style="color: #4980ff"> (Updated)</span>
+                    {% endif %}
+                    <span class="fa fa-flag"></span> 
+                    {% for tag in note.tags %}
+                      {{tag}}, 
+                    {% endfor %}
                   </p>
                 </div>
               </a>
