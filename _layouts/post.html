@@ -13,7 +13,7 @@ layout: header
   <body>
     <img src="{{page.hero | relative_url}}" class="hero">
     <h1>{{page.title}}</h1>
-    <p><span class="fa fa-link"></span><a href="{{ page.link }}"> {{ page.link }}</a></p>
+    <p><span class="fa fa-link"></span><a href="{{ page.link }}" target="_blank"> {{ page.link }}</a></p>
     <p><span class="fa fa-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}</p>
     <p><span class="fa fa-flag"></span> {% for tag in page.tags %}{{tag}}, {% endfor %}</p>
     <p><span class="fa fa-graduation-cap"></span> {{page.conference}} ({{page.year}}) </p>
