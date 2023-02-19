@@ -69,13 +69,13 @@ printfですら型の指定が必要なCは大変ですね...
 AtCoderでプログラミングをして遊んでいたところ，素因数分解の問題が出てきたので，  
 お！そのまま使えるやん！と上記のプログラムをしたところ...
 
-<a href='https://atcoder.jp/contests/math-and-algorithm/submissions/39000792?lang=ja'><img src='/assets/images/blogs/prime-factorization/before.png' height=300></a>
+<a href='https://atcoder.jp/contests/math-and-algorithm/submissions/39000792?lang=ja' target="_blank"><img src='/assets/images/blogs/prime-factorization/before.png' height=300></a>
 
 上のように「遅すぎwwww」と煽られてしまったので，
 整数$n$の因数は$\sqrt{N}$までしかないことを活用して高速化してみました．（関数化はしておらず，表示のために数字をstringで保存しています．）
 
 <script src="https://gist.github.com/Absolute-Value/587490086a9177dd6e43d28be6fb77e0.js"></script>
 
-<a href='https://atcoder.jp/contests/math-and-algorithm/submissions/39001296?lang=ja'><img src='/assets/images/blogs/prime-factorization/after.png' height=300></a>
+<a href='https://atcoder.jp/contests/math-and-algorithm/submissions/39001296?lang=ja' target="_blank"><img src='/assets/images/blogs/prime-factorization/after.png' height=300></a>
 
 AtCoderくんもご満悦です🤗
