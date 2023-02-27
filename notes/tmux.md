@@ -1,7 +1,7 @@
 ---
 title: "tmux 個人的メモ"
 date: "2022-11-17 14:00:00"
-update: "2022-02-27 20:00:00"
+update: "2023-02-27 20:00:00"
 category: "Note"
 hero: /assets/images/notes/tmux/tmux.png
 tags: ["Memo", "tmux"]

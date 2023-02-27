@@ -1,7 +1,7 @@
 ---
 title: "Git 個人的メモ"
 date: "2022-06-20 21:00:00"
-update: "2023-02-27 21:00:00"
+update: "2023-02-27 20:30:00"
 category: "Note"
 hero: https://tech-diary.net/wp-content/uploads/2021/10/how-to-use-git-and-github.png
 tags: ["Memo", "Git"]
@@ -36,18 +36,7 @@ git push -f origin main
 
 以下のgit.shを.gitと同階層に置いた上で実行
 
-## git.sh
-{% highlight shell linenos %}
-#!/bin/sh
-
-git add .
-if [ $# -eq 0 ]; then
-    git commit -m "Update"
-else
-    git commit -m "$1"
-fi
-git push
-{% endhighlight %}
+<script src="https://gist.github.com/Absolute-Value/884943d8d32398582dd1476ab8221711.js"></script>
 
 ## 実行方法
 コミットメッセージがUpdateで良い場合
