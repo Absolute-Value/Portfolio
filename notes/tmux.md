@@ -1,7 +1,7 @@
 ---
 title: "tmux 個人的メモ"
 date: "2022-11-17 14:00:00"
-update: "2022-11-17 14:00:00"
+update: "2022-02-27 20:00:00"
 category: "Note"
 hero: /assets/images/notes/tmux/tmux.png
 tags: ["Memo", "tmux"]
@@ -52,6 +52,11 @@ tmux a
 | 0-9 |  指定番号のウインドウへ移動|
 | p | 前のウインドウへ移動 |
 | n | 次のウインドウへ移動 |
+| : | 以下のコマンド操作の前に打つ |
+
+| コマンド操作 | 説明 |
+| - | - |
+| :join-pane -t [session名]:<windowインデックス値> | 新規ウインドウ作成 |
 
 ## ペイン操作
 

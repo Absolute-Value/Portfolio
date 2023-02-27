@@ -1,7 +1,7 @@
 ---
 title: "Git 個人的メモ"
-date: 2022-06-20
-update: 2022-07-18
+date: "2022-06-20 21:00:00"
+update: "2023-02-27 21:00:00"
 category: "Note"
 hero: https://tech-diary.net/wp-content/uploads/2021/10/how-to-use-git-and-github.png
 tags: ["Memo", "Git"]
@@ -15,6 +15,22 @@ toc: true
 Git操作で役に立ちそうな個人的メモです。
 
 <!--more-->
+
+# git pullを強制する
+
+```console
+git fetch origin main
+git reset --hard origin/main
+```
+
+# pushしてしまったものを元に戻す
+
+コミットのIDを取得する
+
+```console
+git reset --hard <コミットID>
+git push -f origin main
+```
 
 # gitの一連の流れを自動化するbashファイル
 
@@ -43,7 +59,7 @@ $ bash git.sh
 $ bash git.sh <commit message>
 ```
 
-###  bashの省略(Mac)
+### bashの省略(Mac)
 ファイルに実行権限を与える
 ```console
 $ chmod +x git.sh
