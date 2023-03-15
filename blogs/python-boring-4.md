@@ -79,7 +79,7 @@ $ python3 11.1_mapIt.py 870 Valencia St, San Francisco, CA 94110
 ```
 
 Googleマップで開くことができました  
-![](/assets/images/blogs/python-boring-4/11.1.png)  
+![](/blogs/images/python-boring-4/11.1.png)  
 
 ## 11.5 Google検索 "I'm Feeling Lucky"
 コマンドラインからGoogle検索をし、上位の検索結果をタブに開く  
@@ -93,7 +93,7 @@ $ python3 11.5_lucky.py python
 Googling...
 ```
 「python」での上位検索5つをタブで開くことができました  
-![](/assets/images/blogs/python-boring-4/11.5.png)
+![](/blogs/images/python-boring-4/11.5.png)
 
 ## 11.6 XKCDコミックをダウンロードする
 XKCDコミックをひとつずつダウンロードする
@@ -145,7 +145,7 @@ $ python3 11.10.1_CommandLineMailer.py bk5h6t5109@sute.jp test mail
 ```
 
 プログラムで送ったメールを受信することができました（悪用厳禁）  
-![](/assets/images/blogs/python-boring-4/11.10.1.png)
+![](/blogs/images/python-boring-4/11.10.1.png)
 
 ### 11.10.2 画像サイトのダウンローダー
 写真共有サイトFlickeで画像を検索し、検索結果の画像をすべてダウンロード  
@@ -194,9 +194,9 @@ $ python3 11.10.2_Downloader.py Japan
 
 自動的に実行され、3008点を稼ぐことができました
 
-<img src="/assets/images/blogs/python-boring-4/11.10.3_1.png" width="30%">
-<img src="/assets/images/blogs/python-boring-4/11.10.3_2.png" width="30%">
-<img src="/assets/images/blogs/python-boring-4/11.10.3_3.png" width="30%">
+<img src="/blogs/images/python-boring-4/11.10.3_1.png" width="30%">
+<img src="/blogs/images/python-boring-4/11.10.3_2.png" width="30%">
+<img src="/blogs/images/python-boring-4/11.10.3_3.png" width="30%">
 
 ### 11.10.4 リンクの検査
 指定したURLのページからリンクされたすべてのページをダウンロードする

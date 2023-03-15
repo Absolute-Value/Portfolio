@@ -3,7 +3,7 @@ title: "tmux 個人的メモ"
 date: "2022-11-17 14:00:00"
 update: "2023-02-27 20:00:00"
 category: "Note"
-hero: /assets/images/notes/tmux/tmux.png
+hero: /notes/images/tmux/tmux.png
 tags: ["Memo", "tmux"]
 layout: note
 excerpt: tmuxに役立ちそうな個人的メモです。
@@ -73,7 +73,7 @@ tmux a
 # tmux.confの変更
 .tmux.confを編集し、ホームディレクトリに配置することで、以下のようにtmuxをカスタマイズすることができます。
 
-![](/assets/images/notes/tmux/tmux.png)
+![](/notes/images/tmux/tmux.png)
 
 ## カスタマイズ例
 

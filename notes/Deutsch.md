@@ -3,7 +3,7 @@ title: "ドイツ語　授業メモ"
 date: "2019-07-02 12:00:00"
 update: "2019-07-02 12:00:00"
 category: "Note"
-hero: /assets/images/notes/Deutsch/1.jpeg
+hero: /notes/images/Deutsch/1.jpeg
 tags: ["Memo"]
 layout: note
 excerpt: ドイツ語の授業のメモです。
