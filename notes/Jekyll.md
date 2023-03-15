@@ -180,19 +180,6 @@ html内の目次を追加したい箇所に
 }
 ```
 
-# ダークモード
-
-ダークモードには「メディアクエリ，クラス指定，CSS変数」の3つが存在しますが，  
-本ホームページではJavaScriptを利用したクラス指定により，ダークモードを実現しています．  
-
-cssとJavaScriptは以下のようになります．
-
-<script src="https://gist.github.com/Absolute-Value/0aa3aa27c626f2af678b59cb0c42419d.js"></script>
-
-<script src="https://gist.github.com/Absolute-Value/508378fe1493c1b1df7b6c76cc3b1743.js"></script>
-
-他のページへ移動するとダークモードが戻ってしまうバグを修正しました（2023/02/10）
-
 ## その他の設定
 
 _config.ymlを編集
@@ -208,6 +195,19 @@ toc:
   item_class: toc-entry
   item_prefix: toc-
 ```
+
+# ダークモード
+
+ダークモードには「メディアクエリ，クラス指定，CSS変数」の3つが存在しますが，  
+本ホームページではJavaScriptを利用したクラス指定により，ダークモードを実現しています．  
+
+cssとJavaScriptは以下のようになります．
+
+<script src="https://gist.github.com/Absolute-Value/0aa3aa27c626f2af678b59cb0c42419d.js"></script>
+
+<script src="https://gist.github.com/Absolute-Value/508378fe1493c1b1df7b6c76cc3b1743.js"></script>
+
+他のページへ移動するとダークモードが戻ってしまうバグを修正しました（2023/02/10）
 
 # お役立ちリンク
 - [自分で作ったWebページをインターネット上に公開しよう！](https://prog-8.com/docs/github-pages){:target="_blank"}
