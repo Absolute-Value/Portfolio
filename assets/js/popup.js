@@ -2,8 +2,17 @@ function showDetails(button) {
     var popup = document.getElementById("popup");
     popup.innerHTML = "";
     var popupContent = document.createElement('ul');
+    popupContent.style.backgroundColor = "var(--entry)";
+    popupContent.style.marginTop = "0px";
+    popupContent.style.padding = "3%"
+
+    var skills = document.getElementsByClassName("skill");
+    for (i=0;i<skills.length;i++) {
+        skills[i].style.backgroundColor = "var(--theme)";
+    }
 
     spanText = button.querySelector("span").innerHTML;
+    button.style.backgroundColor = "var(--entry)";
     switch (spanText) {
         case 'Python':
             popupContent.innerHTML = '<li>最も使用している言語です．<a href="https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python" class="bachelor" target="_blank"><b>繰り返しの作業の自動化</b></a>や<a href="https://github.com/Absolute-Value/python-GUI"  class="other" target="_blank"><b>GUIソフトの制作</b></a>，<a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo target="_blank"><b>Deep Learning</b></a>で使用しています．</li>';
@@ -31,6 +40,7 @@ function showDetails(button) {
         case 'Ubuntu':
             popupContent.innerHTML = '<li>GPUノード用のOSです．無料なのに色々できて便利です．</li>';
             popupContent.innerHTML += '<li>最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" class="other" target="_blank"><b>セットアップ</b></a>や修理をしています．</li>';
+            break
         case 'Docker':
             popupContent.innerHTML = '<li>GPUノードの個別の環境構築に使用しています．</li>';
             popupContent.innerHTML += '<li>これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの都合上，非公開です．</li>';
