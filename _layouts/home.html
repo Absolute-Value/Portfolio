@@ -40,6 +40,10 @@ layout: header
         <span>Java</span>
       </div>
       <div class="skill" onclick="showDetails(this)">
+        <i class="fa-brands fa-unity fa-2x" style="color:#222c37"></i>
+        <span>Unity</span>
+      </div>
+      <div class="skill" onclick="showDetails(this)">
         <i class="fa-brands fa-html5 fa-2x" style="color:#e34c26"></i>
         <span>HTML</span>
       </div>
@@ -61,30 +65,7 @@ layout: header
       </div>
     </div>
 
-    <script>
-      function showDetails(button) {
-        var popup = document.createElement("div");
-        popup.classList.add("popup");
-      
-        var closeButton = document.createElement("div");
-        closeButton.classList.add("close");
-        closeButton.innerHTML = "x";
-        closeButton.addEventListener("click", closePopup);
-
-        var popupContent = document.createElement("div");
-        popupContent.classList.add("popup-content");
-        popupContent.innerHTML = button.innerHTML;
-      
-        popup.appendChild(closeButton)
-        popup.appendChild(popupContent);
-        document.body.appendChild(popup);
-      }
-
-      function closePopup() {
-        var popup = document.querySelector(".popup");
-        popup.parentNode.removeChild(popup);
-      }
-    </script>
+    <script src="/assets/js/popup.js"></script>
 
     <h1>Recent GitHub Repositories</h1>
     <div class="myrepos"><div id="repoList"></div></div>
