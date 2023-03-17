@@ -4,7 +4,8 @@ function showDetails(button) {
     var popupContent = document.createElement('ul');
     popupContent.style.backgroundColor = "var(--entry)";
     popupContent.style.marginTop = "0px";
-    popupContent.style.padding = "3%"
+    popupContent.style.padding = "3%";
+    popupContent.style.borderRadius = "20px";
 
     var skills = document.getElementsByClassName("skill");
     for (i=0;i<skills.length;i++) {
