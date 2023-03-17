@@ -214,7 +214,7 @@ cssとJavaScriptは以下のようになります．
 - [クイックスタート \| Jekyll](http://jekyllrb-ja.github.io/docs/){:target="_blank"}
 - [テンプレート言語Liquid](https://shopify.github.io/liquid/){:target="_blank"}
   - [Liquidで四則演算](https://blackpigtail.com/web-design/2680){:target="_blank"}
-- [アイコン一覧](https://johobase.com/font-awesome-icon-font-list-free/){:target="_blank"}
+- [アイコン一覧](https://fontawesome.com/icons){:target="_blank"}
 - [markdownでの画像リサイズ](https://qiita.com/shti_f/items/b819d7fd8cb79ae29687){:target="_blank"}
 - [ファビコンの設定](https://techacademy.jp/magazine/30972){:target="_blank"}
     - [ファビコン生成](https://favicon-generator.mintsu-dev.com/){:target="_blank"}
