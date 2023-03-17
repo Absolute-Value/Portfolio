@@ -38,25 +38,30 @@ layout: home
 <a href="https://confit.atlas.jp/guide/event/ssii2022/subject/IS2-19/tables?cryptoId=" class="other" target="_blank"><u>軸屋敬介</u>，加藤邦人，"複雑背景下での対象領域を考慮した異常検知"，第28回画像センシングシンポジウム SSII2022，IS2-19，2022.6.9</a>
 
 ## スキル | Skills
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="20"/> Python
-  - 最も使用している言語です．<a href="https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python" class="bachelor" target="_blank"><b>繰り返しの作業の自動化</b></a>や<a href="https://github.com/Absolute-Value/python-GUI"  class="other" target="_blank"><b>GUIソフトの制作</b></a>，<a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo target="_blank"><b>Deep Learning</b></a>で使用しています．
-- <img src="https://pytorch.org/assets/images/pytorch-logo.png" height="24"/>Pytorch
-  - <a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo target="_blank"><b>Deep Learning</b></a>で使用しているライブラリです．Tensorflowと比べて柔軟な実装が可能で最新手法の公開が早いです．Tensorflowもある程度使用できます．
-- <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1" height="26"/> Java
-  - シューティングゲームを作成しました．
-  - <img src="/assets/images/FiShooting.png" height="300"/>
-  - Androidアプリの<a href="https://github.com/gu-info/ToDoCalendar" class="other" target="_blank"><b>TODOリスト付きカレンダー</b></a>も作成しました．
-- <img src="/assets/images/unity.png" height="25"> Unity
-  - VRで蕎麦運びをするゲームとデバイスを作りました．
-  - <img src="/assets/images/VR.png" height="300"/>
-- htmlとCSSとJavaScript
-  - 本ページはjekyllを用いて、既存のテーマに頼らずhtmlとCSSから作成しました．
-  - 最近では，ダークモードの実装や下にあるGitHubのリポジトリの取得をJavaScriptを用いて行なっています．
-  - ページの評判が良く，後輩も使うようになりました！採用実績は<a href="https://ia-gu.github.io/index" class="labo" target="_blank"><b>コチラ</b></a>
-    - ほとんど同じやないかーい！
-- <img src="https://japan.xilinx.com/content/xilinx/ja/products/design-tools/embedded-software/ubuntu/_jcr_content/root/parsysFullWidth/xilinxflexibleslab/xilinxflexibleslab-parsys/xilinxcolumns_149128/childParsys-2/xilinximage.img.png/1644358907679.png" height="20"> Ubuntu
-  - GPUノード用のOSです．無料なのに色々できて便利です．
-  - 最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" class="other" target="_blank"><b>セットアップ</b></a>や修理をしています．
-- <img src="https://prtimes.jp/i/87890/2/origin/d87890-2-d4d26778877735a3722d-0.png" height="26">
-  - GPUノードの個別の環境構築に使用しています．
-  - これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの都合上，非公開です．
+![](https://img.shields.io/badge/Python-444?style=for-the-badge&logo=python)<br>
+最も使用している言語です．<a href="https://github.com/Absolute-Value/Automate-the-boring-stuff-with-python" class="bachelor" target="_blank"><b>繰り返しの作業の自動化</b></a>や<a href="https://github.com/Absolute-Value/python-GUI"  class="other" target="_blank"><b>GUIソフトの制作</b></a>，<a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo target="_blank"><b>Deep Learning</b></a>で使用しています．
+
+![](https://img.shields.io/badge/Pytorch-444?style=for-the-badge&logo=pytorch)<br>
+<a href="https://github.com/Absolute-Value/Cloth-Anomaly-Detection-pytorch" class=labo target="_blank"><b>Deep Learning</b></a>で使用しているライブラリです．Tensorflowと比べて柔軟な実装が可能で最新手法の公開が早いです．Tensorflowもある程度使用できます．
+
+![](https://img.shields.io/badge/Java-444?style=for-the-badge&logo=CoffeeScript)<br>
+シューティングゲームを作成しました．<br>
+Androidアプリの<a href="https://github.com/gu-info/ToDoCalendar" class="other" target="_blank"><b>TODOリスト付きカレンダー</b></a>も作成しました．<br>
+<img src="/assets/images/FiShooting.png" height="300"/><br>
+
+![](https://img.shields.io/badge/Unity-444?style=for-the-badge&logo=unity)<br>
+VRで蕎麦運びをするゲームとデバイスを作りました．<br>
+<img src="/assets/images/VR.png" height="300"/>
+
+![](https://img.shields.io/badge/HTML-444?style=for-the-badge&logo=html5) ![](https://img.shields.io/badge/CSS-444?style=for-the-badge&logo=css3) ![](https://img.shields.io/badge/JavaScript-444?style=for-the-badge&logo=javascript)<br>
+本ページはjekyllを用いて、既存のテーマに頼らずhtmlとCSSから作成しました．<br>
+最近では，ダークモードの実装や下にあるGitHubのリポジトリの取得をJavaScriptを用いて行なっています．<br>
+ページの評判が良く，後輩も使うようになりました！採用実績は<a href="https://ia-gu.github.io/index" class="labo" target="_blank"><b>コチラ</b></a>
+
+![](https://img.shields.io/badge/Ubuntu-444?style=for-the-badge&logo=Ubuntu)<br>
+GPUノード用のOSです．無料なのに色々できて便利です．
+最近は<a href="https://github.com/Absolute-Value/gpu-setup-20.04" class="other" target="_blank"><b>セットアップ</b></a>や修理をしています．
+
+![](https://img.shields.io/badge/Docker-444?style=for-the-badge&logo=Docker)<br>
+GPUノードの個別の環境構築に使用しています．<br>
+これまでよくわからず使っていましたが，最近はお友達になりました．リポジトリはセキュリティの都合上，非公開です．
