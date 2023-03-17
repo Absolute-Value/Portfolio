@@ -1,14 +1,8 @@
 function showDetails(button) {
-    var popup = document.createElement("div");
-    popup.classList.add("popup");
+    var popup = document.getElementById("popup");
+    popup.innerHTML = "";
+    var popupContent = document.createElement('ul');
 
-    var closeButton = document.createElement("div");
-    closeButton.classList.add("close");
-    closeButton.innerHTML = "x";
-    closeButton.addEventListener("click", closePopup);
-
-    var popupContent = document.createElement("div");
-    popupContent.classList.add("popup-content");
     spanText = button.querySelector("span").innerHTML;
     switch (spanText) {
         case 'Python':
@@ -28,10 +22,11 @@ function showDetails(button) {
             break
         case 'HTML':
         case 'CSS':
-        case 'JavaScript':
             popupContent.innerHTML = '<li>本ページはjekyllを用いて，既存のテーマに頼らずhtmlとCSSから作成しました．</li>';
-            popupContent.innerHTML += '<li>最近では，ダークモードや下にあるGitHubのリポジトリの取得をJavaScriptを用いて作成しました．</li>';
             popupContent.innerHTML += '<li>ページの評判が良く，後輩も使うようになりました！採用実績は<a href="https://ia-gu.github.io/index" class="labo" target="_blank"><b>コチラ</b></li>';
+            break
+        case 'JavaScript':
+            popupContent.innerHTML += '<li>本ページにおけるダークモードの実装や下にあるGitHubのリポジトリの取得をしています．</li>';
             break
         case 'Ubuntu':
             popupContent.innerHTML = '<li>GPUノード用のOSです．無料なのに色々できて便利です．</li>';
@@ -44,12 +39,5 @@ function showDetails(button) {
             popupContent.innerHTML = spanText;
     }
 
-    popup.appendChild(closeButton)
     popup.appendChild(popupContent);
-    document.body.appendChild(popup);
-}
-
-function closePopup() {
-    var popup = document.querySelector(".popup");
-    popup.parentNode.removeChild(popup);
 }
