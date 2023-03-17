@@ -6,7 +6,7 @@ layout: header
 <html>
   <title>{{page.title}}</title>
   <head>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/314069a903.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ '/assets/css/posts.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
@@ -24,6 +24,42 @@ layout: header
     </div>
 
     {{content}}
+
+    <h1>スキル | Skills</h1>
+    <div class="skills">
+      <div class="skill">
+        <i class="fa-brands fa-python fa-2x"></i>
+        <span>Python</span>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-fire fa-2x" style="color:orange"></i>
+        <span>Pytorch</span>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-java fa-2x"></i>
+        <span>Java</span>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-html5 fa-2x"></i>
+        <span>HTML</span>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-css3-alt fa-2x"></i>
+        <span>CSS</span>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-js fa-2x"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-ubuntu fa-2x"></i>
+        <span>Ubuntu</span>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-docker fa-2x"></i>
+        <span>Docker</span>
+      </div>
+    </div>
 
     <h1>Recent GitHub Repositories</h1>
     <div class="myrepos"><div id="repoList"></div></div>
