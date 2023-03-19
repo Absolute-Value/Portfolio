@@ -24,4 +24,4 @@ excerpt: '<span style="color: #42b983;">[遊べます！] </span>ChatGPTに作�
 <a href="https://chat.openai.com/chat" target="_blank">ChatGPT</a>くん（AI）に作ってもらったシューティングゲームを修正しました。
 
 <canvas id="canvas"></canvas>
-<script src="js/ShootingGame.js"></script>
+<script src="js/FiShootingGame.js"></script>
