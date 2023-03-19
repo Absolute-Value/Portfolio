@@ -1,7 +1,7 @@
 ---
 title: "Jekyll ホームページ 個人的メモ"
 date: "2022-07-01 12:00:00"
-update: "2023-02-10 23:00:00"
+update: "2023-03-19 23:00:00"
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
@@ -219,3 +219,5 @@ cssとJavaScriptは以下のようになります．
 - [ファビコンの設定](https://techacademy.jp/magazine/30972){:target="_blank"}
     - [ファビコン生成](https://favicon-generator.mintsu-dev.com/){:target="_blank"}
 - [ハイライトカラー](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers){:target="_blank"}
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [shields.io](https://shields.io/)
