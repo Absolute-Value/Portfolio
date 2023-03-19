@@ -16,6 +16,8 @@ function showDetails(button) {
     button.style.backgroundColor = "var(--entry)";
     var language = document.createElement('h2');
     language.innerText = spanText;
+    language.style.marginLeft = "0px";
+    language.style.marginTop = "0px";
     popupContent.appendChild(language)
 
     switch (spanText) {
