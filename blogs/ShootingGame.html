@@ -1,0 +1,33 @@
+---
+title: シューティングゲーム
+date: "2023-03-20 00:00:00"
+update: "2023-03-20 00:00:00"
+category: "Blog"
+hero: https://image.itmedia.co.jp/news/articles/2212/01/l_tm1636144_2212012_1_w490.jpg
+tags: ["JavaScript"]
+layout: blog
+excerpt: JavaScriptでシューティングゲームをChatGPTに作ってもらいました
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>シューティングゲーム</title>
+    <style>
+      #game-canvas {
+        width: 640px;
+        height: 480px;
+        border: 1px solid black;
+        margin-left: 5%;
+      }
+    </style>
+</head>
+
+<body>
+  <p><a href="https://chat.openai.com/chat" target="_blank">ChatGPT</a>くん（AI）にJavascriptでシューティングを作ってもらいました．</p>
+  <p>これをもとに，以前Javaで作ったシューティングを本ページで実装していこうと考えています．</p>
+
+  <canvas id="game-canvas"></canvas>
+  <script src="game.js"></script>
+</body>
