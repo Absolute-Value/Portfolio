@@ -1,7 +1,7 @@
 ---
 title: シューティングゲーム2
 date: "2023-03-20 01:00:00"
-update: "2023-03-20 01:00:00"
+update: "2023-03-21 22:00:00"
 category: "Blog"
 hero: /assets/images/FiShooting.png
 tags: ["JavaScript"]
