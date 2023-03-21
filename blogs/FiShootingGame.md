@@ -25,4 +25,4 @@ excerpt: '<span style="color: #42b983;">[遊べます！] </span>ChatGPTに作�
 矢印キーで左右に移動，xキーで弾を発射できます．
 
 <canvas id="canvas"></canvas>
-<script src="js/FiShootingGame.js"></script>
+<script src="js/ShootingGame2.js"></script>
