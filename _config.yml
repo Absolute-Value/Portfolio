@@ -2,7 +2,7 @@ name: 軸屋敬介 | Keisuke Jikuya
 icon: assets/images/kei.png
 favicon: assets/images/favicon.ico
 exclude: [README.md]
-keep_files: [README.md]
+keep_files: [README.md, .git]
 excerpt_separator: <!--more-->
 highlighter: rouge
 gems:
@@ -20,7 +20,7 @@ pagination:
   sort_reverse: true
 toc:
   max_level: 2 # default: 6
-url: "https://absolute-value.github.io/"
+url: "https://absolute-value.github.io"
 sitemap:
   file: "/sitemap.xml"
   change_frequency_name: "always"
