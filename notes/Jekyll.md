@@ -131,12 +131,8 @@ pagination:
 参考：[toshimaru/jekyll-toc](https://github.com/toshimaru/jekyll-toc)
 
 ## jekyll-tocをダウンロード
-gemfileを編集
-```console
-vim gemfile
-```
+Gemfileに以下を追加する
 
-以下を追加する
 ```ruby
 gem 'jekyll-toc'
 ```
@@ -194,6 +190,28 @@ toc:
   sublist_class: ''
   item_class: toc-entry
   item_prefix: toc-
+```
+
+# サイトマップの作成
+
+## jekyll-tocをダウンロード
+Gemfileに以下を追加する
+
+```ruby
+gem 'jekyll-sitemap'
+```
+
+インストール
+```console
+bundle install
+```
+
+## _config.ymlを編集
+_config.ymlに以下を追加する
+
+```yml
+gems:
+  - jekyll-sitemap
 ```
 
 # ダークモード

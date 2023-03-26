@@ -7,6 +7,7 @@ highlighter: rouge
 gems:
   - jekyll-paginate-v2
   - jekyll-toc
+  - jekyll-sitemap
 # Pagination Settings
 pagination:
   enabled: true
@@ -18,3 +19,7 @@ pagination:
   sort_reverse: true
 toc:
   max_level: 2 # default: 6
+sitemap:
+  file: "/sitemap.xml"
+  change_frequency_name: "daily"
+  priority_name: "0.8"
