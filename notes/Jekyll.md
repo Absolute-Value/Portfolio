@@ -214,6 +214,8 @@ gems:
   - jekyll-sitemap
 ```
 
+[jekyllでサイトマップ(sitemap.xml)を生成する](https://www.xmisao.com/2014/08/25/generate-sitemap-in-jekyll.html)
+
 # ダークモード
 
 ダークモードには「メディアクエリ，クラス指定，CSS変数」の3つが存在しますが，  

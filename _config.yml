@@ -19,7 +19,8 @@ pagination:
   sort_reverse: true
 toc:
   max_level: 2 # default: 6
+url: "https://absolute-value.github.io/"
 sitemap:
   file: "/sitemap.xml"
-  change_frequency_name: "daily"
+  change_frequency_name: "always"
   priority_name: "0.8"
