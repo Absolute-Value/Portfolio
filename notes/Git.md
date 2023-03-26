@@ -82,3 +82,4 @@ git clone <GitリポジトリのURL>
 3. Messageにコミットメッセージを記入
 4. Commitを押すことでコミットができる
     - コミット右のvから、コミットとともにプッシュもできる
+5. Sync Changesを押すことで、pushができる
