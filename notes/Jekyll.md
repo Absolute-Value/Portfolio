@@ -1,7 +1,7 @@
 ---
 title: "Jekyll ホームページ 個人的メモ"
 date: "2022-07-01 12:00:00"
-update: "2023-03-19 23:00:00"
+update: "2023-03-26 23:00:00"
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
@@ -55,13 +55,13 @@ $ git commit -m "Comment"
 $ git push
 ```
 
-## Git操作の自動化をするbashファイル
-元のプロジェクトとサイト用のプロジェクトに対してgit操作するの面倒だったので自動化するbashを作成しました
-
-git.sh
+<details><summary>Git操作の自動化をするbashファイル</summary>
+<p>元のプロジェクトとサイト用のプロジェクトに対してgit操作するの面倒だったので自動化するbashを作成しました</p>
+<p>git.sh</p>
 <script src="https://gist.github.com/Absolute-Value/96b0dfabffcde15528c82eef9135ec4b.js"></script>
+<p>引数にコミットメッセージ入れれます</p>
 
-引数にコミットメッセージ入れれます
+</details>
 
 # Markdown記法
 ## インラインコード
@@ -94,6 +94,7 @@ end
 ```console
 bundle install
 ```
+
 参考：[理解必須！gemsのインストール方法とインストール場所](https://www.sejuku.net/blog/19603)
 
 ## _config.ymlを編集
@@ -194,7 +195,7 @@ toc:
 
 # サイトマップの作成
 
-## jekyll-tocをダウンロード
+## jekyll-sitemapをダウンロード
 Gemfileに以下を追加する
 
 ```ruby
@@ -212,9 +213,20 @@ _config.ymlに以下を追加する
 ```yml
 gems:
   - jekyll-sitemap
+url: サイトのURL
+sitemap:
+  file: "/sitemap.xml"
+  change_frequency_name: "always"
+  priority_name: "0.8"
 ```
 
-[jekyllでサイトマップ(sitemap.xml)を生成する](https://www.xmisao.com/2014/08/25/generate-sitemap-in-jekyll.html)
+## サイトマップを生成
+```console
+jekyll build
+```
+jekyll serverでは更新されません
+
+参考：[jekyllでサイトマップ(sitemap.xml)を生成する](https://www.xmisao.com/2014/08/25/generate-sitemap-in-jekyll.html)
 
 # ダークモード
 
