@@ -22,7 +22,7 @@ excerpt: '<span style="color: #42b983;">[遊べます！] </span>ChatGPTに作�
 </head>
 
 <a href="https://chat.openai.com/chat" target="_blank">ChatGPT</a>くん（AI）に作ってもらった[<b>シューティングゲーム</b>]({{ 'blogs/ShootingGame' | relative_url }})を修正しました。  
-矢印キーで左右に移動，xキーで弾を発射できます．
+矢印キーで上下左右に移動，xキーで弾を発射できます．
 
 <canvas id="canvas"></canvas>
 <script src="js/config.js"></script>
