@@ -1,7 +1,7 @@
 ---
 title: "Git 個人的メモ"
 date: "2022-06-20 21:00:00"
-update: "2023-02-27 20:30:00"
+update: "2023-03-27 00:30:00"
 category: "Note"
 hero: https://tech-diary.net/wp-content/uploads/2021/10/how-to-use-git-and-github.png
 tags: ["Memo", "Git"]
@@ -76,10 +76,11 @@ git clone <GitリポジトリのURL>
 変更点は緑色で表示され、変更したファイルは黄色で表示される
 
 ## Gitの実行
+![](images/Git/vscode.png)
 1. Ctrl+Shift+G を押してソースの管理を表示
 2. 変更したファイルの右にある+を押すことで、git addができる
     - 省略も可能（すべてaddされる）
 3. Messageにコミットメッセージを記入
 4. Commitを押すことでコミットができる
-    - コミット右のvから、コミットとともにプッシュもできる
+    - コミット右のvからCommit & Pushを押すことで、コミットとともにプッシュもできる
 5. Sync Changesを押すことで、pushができる
