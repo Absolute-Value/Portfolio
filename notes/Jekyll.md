@@ -1,7 +1,7 @@
 ---
 title: "Jekyll ホームページ 個人的メモ"
 date: "2022-07-01 12:00:00"
-update: "2023-03-26 23:00:00"
+update: "2023-05-12 11:00:00"
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
@@ -67,6 +67,8 @@ $ git push
 \`で囲む (Shift + @)
 ## コード
 \`\`\`で囲む
+## Posts内の記事の内部リンクの取得
+<script src="https://gist.github.com/Absolute-Value/649c4306d8ce110a62658a8af54ab7b4.js"></script>
 
 # Postsのページの作成
 参考：[sverrirs/jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
