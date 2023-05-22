@@ -8,7 +8,6 @@ tags: ["BPE", "python"]
 math: true
 layout: blog
 excerpt: BPEを実装しました。
-toc: true
 ---
 
 論文「Neural Machine Translation of Rare Words with Subword Units」
