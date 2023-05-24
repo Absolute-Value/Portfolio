@@ -44,9 +44,12 @@ $(\sigma,c) = f_2(\psi(V^{(1)},...,V^{(n)}))$
 ## 結果
 
 ### 入力画像が１つの場合
-![](/assets/images/posts/pixelNeRF/4.png)  
+![](https://alexyu.net/pixelnerf/img/gif/shapenet_000.gif)
+![](https://alexyu.net/pixelnerf/img/gif/shapenet_001.gif)
+
 ![](/assets/images/posts/pixelNeRF/5.png)
 
 ### 入力画像が数枚の場合
 ![](/assets/images/posts/pixelNeRF/6.png)  
-![](/assets/images/posts/pixelNeRF/7.png)
+![](/assets/images/posts/pixelNeRF/7.png)  
+![](/assets/images/posts/pixelNeRF/8.png)
