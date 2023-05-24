@@ -1,7 +1,7 @@
 ---
 title: "Unified-IO: A Unified Model for Vision, Language, and Multi-Modal Tasks"
 date: "2023-05-08 12:00:00"
-identifier: OFA
+identifier: Unified-IO
 category: Vision and Language
 hero: /assets/images/posts/Unified-IO/Unified-IO-1.png
 link: https://unified-io.allenai.org/
