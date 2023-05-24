@@ -1,7 +1,7 @@
 ---
 title: "tmux 個人的メモ"
 date: "2022-11-17 14:00:00"
-update: "2023-03-27 19:00:00"
+update: "2023-05-24 22:00:00"
 category: "Note"
 hero: /notes/images/tmux/tmux.png
 tags: ["Memo", "tmux"]
@@ -20,7 +20,7 @@ ssh接続を終了してもプログラムを動かし続けてログを残す�
 # 起動と終了
 
 ```bash
-# 新規セッション開始
+# 新規セッション開始（セッション名は0）
 tmux
 
 # 名前をつけて新規セッション開始
@@ -80,6 +80,14 @@ tmux a
 
 .tmux.conf
 <script src="https://gist.github.com/Absolute-Value/616203b77258c4ccc0f4b28bd5d22faf.js"></script>
+
+# tmuxのサイズが小さくなってしまう場合の対処法
+tmuxのサイズが他の接続端末のサイズに合わせて小さくなってしまった場合に  
+他の端末の接続を切って、大きさを現在の画面に合わせるには以下を実行
+
+```bash
+tmux attach -t <セッション名> -d
+```
 
 # 参考になるURL
 - [tmuxチートシート](https://qiita.com/nmrmsys/items/03f97f5eabec18a3a18b){:target="_blank"}
