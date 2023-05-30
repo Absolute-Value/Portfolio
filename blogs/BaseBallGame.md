@@ -12,6 +12,8 @@ excerpt: '<span style="color: #42b983;">[遊べます！] </span>Pythonで作っ
 学生の特権を使ってGithub PROアカウントになり，Github Copilotを試してたら楽しくなって作ってしまった<a href="https://github.com/Absolute-Value/BaseBallGame" target="_blank"><b>コチラ</b></a>の野球ゲームのpythonコードをJavaScriptに移行してみました．  
 このまま遊べると思います．操作方法はゲームの下にあります．
 
+<a href="https://github.com/Absolute-Value/BaseBallJS" target="_blank"><b>Github リポジトリ</b></a>
+
 <head>
   <meta charset="utf-8">
     <style>
