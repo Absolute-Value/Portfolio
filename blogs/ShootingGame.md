@@ -1,7 +1,7 @@
 ---
 title: シューティングゲーム
 date: "2023-03-20 00:00:00"
-update: "2023-03-20 00:00:00"
+update: "2023-05-30 23:30:00"
 category: "Blog"
 hero: https://image.itmedia.co.jp/news/articles/2212/01/l_tm1636144_2212012_1_w490.jpg
 tags: ["JavaScript"]
