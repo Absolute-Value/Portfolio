@@ -1,7 +1,7 @@
 ---
 title: 野球ゲーム
-date: "2023-05-31 00:00:00"
-update: "2023-05-31 01:00:00"
+date: "2023-06-07 00:00:00"
+update: "2023-06-07 01:00:00"
 category: "Blog"
 hero: https://cdn.pixabay.com/photo/2016/11/22/22/17/action-1850887_1280.jpg
 tags: ["JavaScript"]
@@ -11,6 +11,7 @@ excerpt: '<span style="color: #42b983;">[遊べます！] </span>Pythonで作っ
 
 学生の特権を使ってGithub PROアカウントになり，Github Copilotを試してたら楽しくなって作ってしまった<a href="https://github.com/Absolute-Value/BaseBallGame" target="_blank"><b>コチラ</b></a>の野球ゲームのpythonコードをJavaScriptに移行してみました．  
 このまま遊べると思います．操作方法はゲームの下にあります．
+ゲーム画面が表示されない場合はReloadしてみてください．
 
 <a href="https://github.com/Absolute-Value/BaseBallJS" target="_blank"><b>Github リポジトリ</b></a>
 
