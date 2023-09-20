@@ -25,5 +25,5 @@ excerpt: '<span style="color: #42b983;">[遊べます！] </span>ChatGPTに作�
 矢印キーで上下左右に移動，xキーで弾を発射できます．
 
 <canvas id="canvas"></canvas>
-<script src="https://absolute-value.github.io/ShootingGame/config.js"></script>
-<script src="https://absolute-value.github.io/ShootingGame/ShootingGame.js"></script>
+<script src="https://absolute-value.github.io/ShootingGameJS/config.js"></script>
+<script src="https://absolute-value.github.io/ShootingGameJS/ShootingGame.js"></script>
