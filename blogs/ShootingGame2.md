@@ -11,14 +11,26 @@ excerpt: '<span style="color: #42b983;">[遊べます！] </span>ChatGPTに作�
 
 <head>
   <meta charset="utf-8">
-    <style>
-      #canvas {
-        width: 640px;
-        height: 480px;
-        border: 2px solid #999;
-        margin-left: 5%;
+  <style>
+    #canvas {
+      width: 100%;
+      height: auto;
+      max-width: 640px;
+      border: 2px solid #999;
+      margin-left: 5%;
+    }
+  </style>
+  <script>
+    window.addEventListener('resize', function() {
+      var windowWidth = window.innerWidth;
+      var canvas = document.getElementById('canvas');
+      if (windowWidth < 640) {
+        canvas.style.width = windowWidth + 'px';
+      } else {
+        canvas.style.width = '640px';
       }
-    </style>
+    });
+  </script>
 </head>
 
 <a href="https://chat.openai.com/chat" target="_blank">ChatGPT</a>くん（AI）に作ってもらった[<b>シューティングゲーム</b>]({{ 'blogs/ShootingGame' | relative_url }})を修正しました。  
