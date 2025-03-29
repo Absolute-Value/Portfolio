@@ -1,7 +1,7 @@
 ---
 title: "Jekyllによるホームページ構築メモ"
 date: "2022-07-01 00:00:00"
-update: "2022-09-08 06:00:00"
+update: "2025-03-29 12:00:00"
 category: "Note"
 hero: http://jekyllrb-ja.github.io/img/logo-2x.png
 tags: ["Memo", "Jekyll"]
@@ -55,13 +55,13 @@ Rubyのバージョンが2など最新でない場合は端末を再起動
 $ gem install jekyll
 ```
 
-# エラー対処
+## エラー対処
 コマンドライン起動時に`chruby: unknown Ruby: ruby-3.1.1`と表示される場合  
   
 `./.zshrc`内に誤ったバージョンを追加してしまっているため，[vi]()などで文を削除すると解決する
 
-## Jekyll使い方はコチラ
-[Jekyll ホームページ 個人的メモ]({{ 'notes/Jekyll' | relative_url }})
+## Jekyllの使い方
+[<button style="padding:10px 20px; background-color:#42b983; color:white; border:none; border-radius:5px; cursor:pointer; transition:transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Jekyll ホームページ 個人的メモ</button>]({{ 'notes/Jekyll' | relative_url }})
 
 # その他設定
-[Markdownで数式を使用する方法](https://qiita.com/memakura/items/e4d2de379f98ad7be498){:target="_blank"}
+[<button style="padding:10px 20px; background-color:#42b983; color:white; border:none; border-radius:5px; cursor:pointer; transition:transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Markdownで数式を使用する方法</button>](https://qiita.com/memakura/items/e4d2de379f98ad7be498){:target="_blank"}

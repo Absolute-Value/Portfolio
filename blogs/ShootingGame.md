@@ -21,10 +21,12 @@ excerpt: JavaScriptでシューティングゲームをChatGPTに作ってもら
     </style>
 </head>
 
-<a href="https://chat.openai.com/chat" target="_blank">ChatGPT</a>くん（AI）にJavascriptでシューティングを作ってもらいました．  
-初期位置からすぐに移動しないと殺される鬼畜仕様です．（このページに入った瞬間殺されます）  
-矢印キーで左右に移動できます．敵を避けることしかできません...  
-これをもとに，まともに遊べるシューティングを[<b>コチラ</b>]({{ 'blogs/ShootingGame2' | relative_url }})で実装していこうと考えています．  
+# <a href="https://chat.openai.com/chat" target="_blank">ChatGPT</a>くん（AI）にJavascriptでシューティングを作ってもらいました．  
+
+1. 初期位置からすぐに移動しないと殺される鬼畜仕様です．（このページに入った瞬間殺されます）  
+2. 矢印キーで左右に移動できます．敵を避けることしかできません...  
+
+これをもとに，まともに遊べるシューティングを[<b style="font-size: 1.5em;">コチラ</b>]({{ 'blogs/ShootingGame2' | relative_url }})で実装していこうと考えています．  
 
 <canvas id="canvas"></canvas>
 <script src="js/ShootingGame.js"></script>
