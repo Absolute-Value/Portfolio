@@ -1,0 +1,89 @@
+---
+title: 古今東西（山手線）ゲーム
+date: "2025-07-17 23:00:00"
+update: "2025-07-17 23:00:00"
+category: "Blog"
+hero: /blogs/images/ChainGame/hero.jpg
+tags: ["JavaScript"]
+layout: blog
+excerpt: JavaScriptで古今東西（山手線）ゲームを作ってみました
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>古今東西（山手線）ゲーム</title>
+  <style>
+    p {
+      padding: 10px;
+      margin: 10px 6%;
+    }
+    select {
+      margin: 10px 6%;
+      padding: 10px;
+      background-color: var(--theme);
+      color: var(--primary);
+    }
+    .chatContainer {
+      margin: 10px 6%;
+      padding: 10px;
+      width: 88%;
+      background-color: var(--entry);
+    }
+    #chatHistory {
+      height: 400px;
+      overflow-y: auto;
+    }
+    .user {
+      background-color: var(--theme);
+      border-radius: 10px;
+      max-width: 60%;
+      width: fit-content;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .assistant {
+      max-width: 60%;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    #chatInput {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--theme);
+      color: var(--primary);
+      border-radius: 10px;
+    }
+    #chatInputField {
+      background-color: var(--theme);
+      color: var(--primary);
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    #sendButton {
+      background-color: var(--theme);
+      color: var(--primary);
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+  <script src="js/ChainGame.js" defer></script>
+</head>
+<body>
+  <h1>古今東西（山手線）ゲーム</h1>
+  <p>チャット形式の古今東西（山手線）ゲームを作ってみました。自分の知識をお試しください。</p>
+  <p>ギブアップと入力すると、答えられなかったものが表示されます。</p>
+  <select id="dataFileSelector"></select>
+  <div class="chatContainer">
+    <div id="chatHistory"></div>
+    <div id="chatInput">
+      <input type="text" id="chatInputField" placeholder="回答を入力" style="flex: 1;">
+      <button id="sendButton"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+</body>
