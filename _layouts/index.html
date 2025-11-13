@@ -110,39 +110,6 @@ layout: header
     <div class="myrepos"><div id="repoList"></div></div>
     <script src="/assets/js/github_repositories.js"></script>
 
-    <h1>Recent Posts</h1>
-    <div class="myposts">
-      {% assign count = 0 %}
-      {% for post in site.posts %}
-        {% if post.layout == 'post'%}
-          {% if count < 3 %}
-            <div class="post">
-              <a href="{{ post.url }}">
-                <img class="post_img" src="{{post.hero | relative_url}}">
-                <div class="post_detail">
-                  <p>
-                    <b>{{ post.title }}</b>
-                  </p>
-                  <p>{{ post.excerpt | remove:'概要' }}</p>
-                  <p>
-                    <span class="fa fa-calendar"></span> {{ post.date | date: "%b %-d, %Y" }}
-                    <span class="fa fa-folder"></span> {{ post.category }}
-                    <span class="fa fa-graduation-cap"></span> {{post.conference}} ({{post.year}})
-                  </p>
-                </div>
-              </a>
-            </div>
-            {% assign count = count | plus: 1 %}
-          {% else %}
-            {% break %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-    <div class="btn-wrapper">
-      <a href="{{'posts' | relative_url}}" class="btn back_btn">View more</a>
-    </div>
-
     <h1>Recent Notes</h1>
     <div class="myposts">
       {% assign count = 0 %}
@@ -226,6 +193,39 @@ layout: header
     <div class="btn-wrapper">
       <a href="{{'blogs' | relative_url}}" class="btn back_btn">View more</a>
     </div>
-    
+
+    <h1>Recent Posts</h1>
+    <div class="myposts">
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% if post.layout == 'post'%}
+          {% if count < 3 %}
+            <div class="post">
+              <a href="{{ post.url }}">
+                <img class="post_img" src="{{post.hero | relative_url}}">
+                <div class="post_detail">
+                  <p>
+                    <b>{{ post.title }}</b>
+                  </p>
+                  <p>{{ post.excerpt | remove:'概要' }}</p>
+                  <p>
+                    <span class="fa fa-calendar"></span> {{ post.date | date: "%b %-d, %Y" }}
+                    <span class="fa fa-folder"></span> {{ post.category }}
+                    <span class="fa fa-graduation-cap"></span> {{post.conference}} ({{post.year}})
+                  </p>
+                </div>
+              </a>
+            </div>
+            {% assign count = count | plus: 1 %}
+          {% else %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="btn-wrapper">
+      <a href="{{'posts' | relative_url}}" class="btn back_btn">View more</a>
+    </div>
+
   </body>
 </html>
